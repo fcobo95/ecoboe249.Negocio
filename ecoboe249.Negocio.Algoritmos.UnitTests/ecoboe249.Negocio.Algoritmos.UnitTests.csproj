@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAC219D7-DD17-4EE2-805A-EFB0AEE5DABD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ecoboe249.Negocio.Algoritmos.UnitTests</RootNamespace>
+    <AssemblyName>ecoboe249.Negocio.Algoritmos.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="1. Codigos de Referencia\1. Como un Procedimiento\CalculosDelCodigoDeReferencia\CalculosDelCodigoDeReferencia_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\2. Con Funciones\CalculosDelCodigoDeReferencia\CalculosDelCodigoDeReferencia_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElAño\ElAño_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElDiaATexto\ElDiaATexto_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElDia\ElDia_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElDigitoVerificador\ElDigitoVerificador_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElMesATexto\ElMesATexto_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElMes\ElMes_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\LaFecha\LaFecha_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\1. Como un Procedimiento\CalculosParaElRendimientoPorDescuento - Copy\CalculosParaElRendimientoPorDescuento_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\2. Con Funciones\CalculosParaElRendimientoPorDescuento - Copy\CalculosParaElRendimientoPorDescuento_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\ElAño\ElAño_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\ElDiaATexto\ElDiaATexto_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\ElDia\ElDia_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\ElDigitoVerificador\ElDigitoVerificador_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\ElMesATexto\ElMesATexto_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\ElMes\ElMes_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\LaFecha\LaFecha_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\CalculosParaElRendimientoPorDescuento\CalculosParaElRendimientoPorDescuento_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\ElRendimientoPorDescuento\ElRendimientoPorDescuento_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\LaTasaBruta\LaTasaBruta_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\LosDiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\ElValorTransadoBrutoConTratamientoFiscal\ElValorTransadoBrutoConTratamientoFiscal_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\ElRendimientoPorDescuento\ElRendimientoPorDescuento_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\ElValorTransadoBrutoConTratamientoFiscal\ElValorTransadoBrutoConTratamientoFiscal_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\LaTasaBruta\LaTasaBruta_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\LosDiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
+    <Compile Include="3. Impuestos\1. Como un Procedimiento\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
+    <Compile Include="3. Impuestos\2. Con Funciones\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\DiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\ImpuestoConTratamientoFiscal\ImpuestoConTratamientoFiscal_Tests.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\Impuesto\Impuesto_Tests.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\TasaBruta\TasaBruta_Tests.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\DiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\ImpuestoConTratamientoFiscal\ImpuestoConTratamientoFiscal_Tests.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\Impuesto\Impuesto_Tests.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\TasaBruta\TasaBruta_Tests.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ecoboe249.Negocio.Algoritmos\ecoboe249.Negocio.Algoritmos.csproj">
+      <Project>{f307ea81-f427-4446-9b1b-df2955fa5047}</Project>
+      <Name>ecoboe249.Negocio.Algoritmos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="4. Validacion\1. Como un Procedimiento\" />
+    <Folder Include="4. Validacion\2. Con Funciones\" />
+    <Folder Include="4. Validacion\3. Con Objetos\" />
+    <Folder Include="4. Validacion\4. Con ParameterObject\" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

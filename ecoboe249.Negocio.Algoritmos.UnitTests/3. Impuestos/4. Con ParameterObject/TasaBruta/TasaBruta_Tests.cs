@@ -1,0 +1,29 @@
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ecoboe249.Negocio.Algoritmos.ConParameterObject.Impuesto;
+
+namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConParameterObject.Impuesto_Tests
+{
+    [TestClass]
+    public class TasaBruta_Tests
+    {
+        private double elResultadoEsperado;
+        private double elResutaldoObtenido;
+        InformacionTasaBruta infoTasaBruta;
+
+        [TestMethod]
+        public void TasaBruta()
+        {
+            elResultadoEsperado = 11.9680;
+
+            infoTasaBruta = new InformacionTasaBruta();
+            infoTasaBruta.ValorFacial = 320000;
+            infoTasaBruta.ValorTransadoNeto = 300000;
+            infoTasaBruta.TasaDeImpuesto = 0.08;
+            infoTasaBruta.DiasAlVencimientoComoNumero = 221;
+            elResutaldoObtenido = new TasaBruta(infoTasaBruta).ComoNumero();
+
+            Assert.AreEqual(elResultadoEsperado, elResutaldoObtenido, 0.0001);
+        }
+    }
+}

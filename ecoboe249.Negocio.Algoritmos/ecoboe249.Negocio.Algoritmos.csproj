@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F307EA81-F427-4446-9B1B-DF2955FA5047}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ecoboe249.Negocio.Algoritmos</RootNamespace>
+    <AssemblyName>ecoboe249.Negocio.Algoritmos</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1. Codigos de Referencia\1. Como un Procedimiento\CalculosDelCodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\2. Con Funciones\CalculosDelCodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\CalculosDelCodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\Año.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\CodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\Dia.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\DiaATexto.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\DigitoVerificador.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\Mes.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\MesATexto.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\Requerimiento.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\CalculosDelCodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\Año.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\CodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\Dia.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\DiaATexto.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\DigitoVerificador.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\Mes.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\MesATexto.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\Requerimiento.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\InformacionDelCodigo.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\Fecha.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\Fecha.cs" />
+    <Compile Include="2. Rendimiento por Descuento\1. Como un Procedimiento\CalculosParaElRendimientoPorDescuento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\2. Con Funciones\CalculosParaElRendimientoPorDescuento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\CalculosParaElRendimientoPorDescuento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\RendimientoPorDescuento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\ValorTransadoBrutoConTratamientoFiscal.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\TasaBruta.cs" />
+    <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\DiasAlVencimiento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\CalculosParaElRendimientoPorDescuento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\RendimientoPorDescuento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\ValorTransadoBrutoConTratamientoFiscal.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\InformacionDelRendimiento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\InformacionTasaBruta.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\TasaBruta.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\DiasAlVencimiento.cs" />
+    <Compile Include="3. Impuestos\1. Como un Procedimiento\CalculosParaElImpuesto.cs" />
+    <Compile Include="3. Impuestos\2. Con Funciones\CalculosParaElImpuesto.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\CalculosParaElImpuesto.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\DiasAlVencimiento.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\Impuesto.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\ImpuestoConTratamientoFiscal.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\TasaBruta.cs" />
+    <Compile Include="3. Impuestos\3. Con Objetos\ValorTransadoBruto.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\CalculosParaElImpuesto.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\DiasAlVencimiento.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\Impuesto.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\ImpuestoConTratamientoFiscal.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\InformacionSobreImpuesto.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\InformacionTasaBruta.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\TasaBruta.cs" />
+    <Compile Include="3. Impuestos\4. Con ParameterObject\ValorTransadoBruto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\" />
+    <Folder Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\" />
+    <Folder Include="3. Impuestos\5. Con Tell Don%27t Ask\" />
+    <Folder Include="4. Validacion\1. Como un Procedimiento\" />
+    <Folder Include="4. Validacion\2. Con Funciones\" />
+    <Folder Include="4. Validacion\3. Con Objetos\" />
+    <Folder Include="4. Validacion\4. Con ParameterObject\" />
+    <Folder Include="4. Validacion\5. Con Tell Don%27t Ask\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
