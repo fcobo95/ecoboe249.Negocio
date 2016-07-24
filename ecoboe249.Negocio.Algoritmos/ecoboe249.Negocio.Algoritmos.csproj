@@ -63,6 +63,17 @@
     <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\InformacionDelCodigo.cs" />
     <Compile Include="1. Codigos de Referencia\3. Con Objetos\Fecha.cs" />
     <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\Fecha.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Año.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\CalculosDelCodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\CodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Dia.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\DiaATexto.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\DigitoVerificador.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Fecha.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\InformacionDelCodigo.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Mes.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\MesATexto.cs" />
+    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Requerimiento.cs" />
     <Compile Include="2. Rendimiento por Descuento\1. Como un Procedimiento\CalculosParaElRendimientoPorDescuento.cs" />
     <Compile Include="2. Rendimiento por Descuento\2. Con Funciones\CalculosParaElRendimientoPorDescuento.cs" />
     <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\CalculosParaElRendimientoPorDescuento.cs" />
@@ -93,17 +104,27 @@
     <Compile Include="3. Impuestos\4. Con ParameterObject\InformacionTasaBruta.cs" />
     <Compile Include="3. Impuestos\4. Con ParameterObject\TasaBruta.cs" />
     <Compile Include="3. Impuestos\4. Con ParameterObject\ValorTransadoBruto.cs" />
+    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\CalculosParaElImpuesto.cs" />
+    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\DiasAlVencimiento.cs" />
+    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\Impuesto.cs" />
+    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\ImpuestoConTratamientoFiscal.cs" />
+    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\InformacionSobreImpuesto.cs" />
+    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\InformacionTasaBruta.cs" />
+    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\TasaBruta.cs" />
+    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\ValorTransadoBruto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\" />
+    <Folder Include="1. Codigos de Referencia\6. Con Polimorfismo\" />
     <Folder Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\" />
-    <Folder Include="3. Impuestos\5. Con Tell Don%27t Ask\" />
+    <Folder Include="2. Rendimiento por Descuento\6. Con Polimorfismo\" />
+    <Folder Include="3. Impuestos\6. Con Polimorfismo\" />
     <Folder Include="4. Validacion\1. Como un Procedimiento\" />
     <Folder Include="4. Validacion\2. Con Funciones\" />
     <Folder Include="4. Validacion\3. Con Objetos\" />
     <Folder Include="4. Validacion\4. Con ParameterObject\" />
     <Folder Include="4. Validacion\5. Con Tell Don%27t Ask\" />
+    <Folder Include="4. Validacion\6. Con Polimorfismo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
