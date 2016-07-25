@@ -9,7 +9,6 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConParameterObject.RendimientoP
     {
         private double elResultadoEsperado;
         private double elResultadoObtenido;
-        InformacionTasaBruta laTasa;
         InformacionDelRendimiento elRendimiento;
 
         [TestMethod]
@@ -18,12 +17,11 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConParameterObject.RendimientoP
             elResultadoEsperado = 298378.3784;
 
             elRendimiento = new InformacionDelRendimiento();
-            laTasa = new InformacionTasaBruta();
-            laTasa.ValorFacial = 320000;
-            laTasa.ValorTransadoNeto = 300000;
+            elRendimiento.ValorFacial = 320000;
+            elRendimiento.ValorTransadoNeto = 300000;
+            elRendimiento.TasaDeImpuesto = 0.08;
             elRendimiento.FechaDeVencimiento = new DateTime(2016, 10, 10);
             elRendimiento.FechaActual = new DateTime(2016, 3, 3);
-            laTasa.DiasAlVencimientoComoNumero = 221;
             elResultadoObtenido = new ValorTransadoBrutoConTratamientoFiscal(elRendimiento).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);

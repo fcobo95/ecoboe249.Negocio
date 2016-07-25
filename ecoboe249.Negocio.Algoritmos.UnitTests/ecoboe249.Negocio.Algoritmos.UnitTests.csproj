@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="1. Codigos de Referencia\1. Como un Procedimiento\CalculosDelCodigoDeReferencia\CalculosDelCodigoDeReferencia_Tests.cs" />
     <Compile Include="1. Codigos de Referencia\2. Con Funciones\CalculosDelCodigoDeReferencia\CalculosDelCodigoDeReferencia_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\3. Con Objetos\CalculosDelCodigoDeReferencia\CalculosDelCodigoDeReferencia_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\CalculosDelCodigoDeReferencia\CalculosDelCodigoDeReferencia_Tests.cs" />
     <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElAño\ElAño_Tests.cs" />
     <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElDiaATexto\ElDiaATexto_Tests.cs" />
     <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\ElDia\ElDia_Tests.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\LaTasaBruta\LaTasaBruta_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\LosDiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\ElValorTransadoBrutoConTratamientoFiscal\ElValorTransadoBrutoConTratamientoFiscal_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\CalculosParaElRendimientoPorDescuento\CalculosParaElRendimientoPorDescuento_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\ElRendimientoPorDescuento\ElRendimientoPorDescuento_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\ElValorTransadoBrutoConTratamientoFiscal\ElValorTransadoBrutoConTratamientoFiscal_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\LaTasaBruta\LaTasaBruta_Tests.cs" />
@@ -93,6 +96,8 @@
     <Compile Include="3. Impuestos\4. Con ParameterObject\Impuesto\Impuesto_Tests.cs" />
     <Compile Include="3. Impuestos\4. Con ParameterObject\TasaBruta\TasaBruta_Tests.cs" />
     <Compile Include="3. Impuestos\4. Con ParameterObject\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
+    <Compile Include="4. Validacion\1. Como un Procedimiento\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
+    <Compile Include="4. Validacion\2. Con Funciones\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,8 +107,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="4. Validacion\1. Como un Procedimiento\" />
-    <Folder Include="4. Validacion\2. Con Funciones\" />
     <Folder Include="4. Validacion\3. Con Objetos\" />
     <Folder Include="4. Validacion\4. Con ParameterObject\" />
   </ItemGroup>

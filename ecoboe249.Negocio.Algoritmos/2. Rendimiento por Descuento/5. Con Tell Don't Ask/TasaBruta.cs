@@ -1,4 +1,4 @@
-﻿namespace ecoboe249.Negocio.Algoritmos.ConParameterObject.RendimientoPorDescuento
+﻿namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
 {
     public class TasaBruta
     {
