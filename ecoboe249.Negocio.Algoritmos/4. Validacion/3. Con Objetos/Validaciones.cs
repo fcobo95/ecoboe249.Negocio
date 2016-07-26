@@ -1,17 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ecoboe249.Negocio.Algoritmos.ConFunciones.ValidacionesImpuesto
+namespace ecoboe249.Negocio.Algoritmos.ConObjetos.ValidacionesImpuesto
 {
-    public class ValidacionesParaElImpuesto
+    public class Validaciones
     {
-        public static bool Validaciones(double elValorFacial, double elValorTransadoNeto, double laTasaDeImpuesto, DateTime laFechaDeVencimiento, DateTime laFechaActual)
-        {
-            bool elValorFacialEsCorrecto = VerifiqueElValorFacial(elValorFacial);
-            bool elValorTransadoNetoEsCorrecto = VerifiqueElValorTransadoNeto(elValorTransadoNeto);
-            bool laTasaDeImpuestoEsCorrecta = VerifiqueLaTasaDeImpuesto(laTasaDeImpuesto);
-            bool laFechaActualEsMenorQueLaDeVencimientoEsValida = VerifiqueLaFecha(laFechaDeVencimiento, laFechaActual);
+        private bool elValorFacialEsCorrecto;
+        private bool elValorTransadoNetoEsCorrecto;
+        private bool laTasaDeImpuestoEsCorrecta;
+        private bool laFechaActualEsMenorQueLaDeVencimientoEsValida;
 
-            return VerifiqueQueTodasLasValidacionesSeanVerdaderas(elValorFacialEsCorrecto, elValorTransadoNetoEsCorrecto, laTasaDeImpuestoEsCorrecta, laFechaActualEsMenorQueLaDeVencimientoEsValida);
+        public Validaciones(double elValorFacial, double elValorTransadoNeto, double laTasaDeImpuesto, DateTime laFechaDeVencimiento, DateTime laFechaActual)
+        {
+            elValorFacialEsCorrecto = VerifiqueElValorFacial(elValorFacial);
+            elValorTransadoNetoEsCorrecto = VerifiqueElValorTransadoNeto(elValorTransadoNeto);
+            laTasaDeImpuestoEsCorrecta = VerifiqueLaTasaDeImpuesto(laTasaDeImpuesto);
+            laFechaActualEsMenorQueLaDeVencimientoEsValida = VerifiqueLaFecha(laFechaDeVencimiento, laFechaActual);
         }
 
         private static bool VerifiqueElValorFacial(double elValorFacial)
@@ -46,7 +53,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConFunciones.ValidacionesImpuesto
                 return false;
         }
 
-        private static bool VerifiqueQueTodasLasValidacionesSeanVerdaderas(bool elValorFacialEsCorrecto, bool elValorTransadoNetoEsCorrecto, bool laTasaDeImpuestoEsCorrecta, bool laFechaActualEsMenorQueLaDeVencimientoEsValida)
+        public bool ValideQueSeaCierto()
         {
             if (elValorFacialEsCorrecto & elValorTransadoNetoEsCorrecto
                 & laTasaDeImpuestoEsCorrecta & laFechaActualEsMenorQueLaDeVencimientoEsValida)

@@ -98,6 +98,10 @@
     <Compile Include="3. Impuestos\4. Con ParameterObject\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
     <Compile Include="4. Validacion\1. Como un Procedimiento\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
     <Compile Include="4. Validacion\2. Con Funciones\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
+    <Compile Include="4. Validacion\3. Con Objetos\Validaciones\Validaciones_Tests.cs" />
+    <Compile Include="4. Validacion\3. Con Objetos\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
+    <Compile Include="4. Validacion\4. Con ParameterObject\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
+    <Compile Include="4. Validacion\4. Con ParameterObject\Validaciones\Validaciones_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -106,10 +110,7 @@
       <Name>ecoboe249.Negocio.Algoritmos</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="4. Validacion\3. Con Objetos\" />
-    <Folder Include="4. Validacion\4. Con ParameterObject\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
