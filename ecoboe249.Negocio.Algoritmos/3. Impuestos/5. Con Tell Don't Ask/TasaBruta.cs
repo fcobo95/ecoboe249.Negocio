@@ -7,14 +7,14 @@
 
         public TasaBruta(InformacionTasaBruta infoTasaBruta)
         {
-            //TODO
+            //TODO Arreglar detalles
             laTasaNeta = ObtengaLaTasaNeta(infoTasaBruta);
             laTasaDeImpuesto = infoTasaBruta.TasaDeImpuesto;
         }
 
         private static double ObtengaLaTasaNeta(InformacionTasaBruta infoTasaBruta)
         {
-            //TODO
+            //TODO Mas de una operacion
             return ((infoTasaBruta.ValorFacial - infoTasaBruta.ValorTransadoNeto) / (infoTasaBruta.ValorTransadoNeto * (infoTasaBruta.DiasAlVencimientoComoNumero / 365))) * 100;
         }
 

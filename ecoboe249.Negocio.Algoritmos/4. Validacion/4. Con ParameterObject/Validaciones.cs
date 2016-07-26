@@ -23,6 +23,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConParameterObject.ValidacionesImpuesto
 
         private static bool VerifiqueElValorFacial(InformacionValidaciones lasValidaciones)
         {
+            //TODO Mas de una operacion
             if (lasValidaciones.ValorFacial > 100000)
                 return true;
             else
@@ -31,6 +32,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConParameterObject.ValidacionesImpuesto
 
         private static bool VerifiqueElValorTransadoNeto(InformacionValidaciones lasValidaciones)
         {
+            //TODO Mas de una operacion
             if (lasValidaciones.ValorTransadoNeto > 100000)
                 return true;
             else
@@ -39,6 +41,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConParameterObject.ValidacionesImpuesto
 
         private static bool VerifiqueLaTasaDeImpuesto(InformacionValidaciones lasValidaciones)
         {
+            //TODO Mas de una operacion
             if ((lasValidaciones.TasaDeImpuesto < 1) & (lasValidaciones.TasaDeImpuesto > 0))
                 return true;
             else
@@ -47,6 +50,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConParameterObject.ValidacionesImpuesto
 
         private static bool VerifiqueLaFecha(InformacionValidaciones lasValidaciones)
         {
+            //TODO Mas de una operacion
             if (lasValidaciones.FechaActual < lasValidaciones.FechaDeVencimiento)
                 return true;
             else
@@ -55,6 +59,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConParameterObject.ValidacionesImpuesto
 
         public bool ValideQueSeaCierto()
         {
+            //TODO Mas de una operacion (No estoy seguro del todo, preguntar)
             if (elValorFacialEsCorrecto & elValorTransadoNetoEsCorrecto
                 & laTasaDeImpuestoEsCorrecta & laFechaActualEsMenorQueLaDeVencimientoEsValida)
                 return true;

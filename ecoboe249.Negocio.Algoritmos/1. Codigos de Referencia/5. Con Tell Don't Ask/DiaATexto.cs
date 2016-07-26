@@ -13,7 +13,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
 
         private static int ObtengaElDia(InformacionDelCodigo elCodigo)
         {
-            //TODO
+            //TODO Demeter
             return elCodigo.Fecha.Day;
         }
 

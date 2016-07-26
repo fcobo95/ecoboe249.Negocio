@@ -10,7 +10,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
 
         public ValorTransadoBruto(InformacionSobreImpuesto infoImpuesto)
         {
-            //DEFINITIVAMENTE TODO
+            //TODO DEFINITIVAMENTE Arreglar Detalles
             elValorFacial = infoImpuesto.ValorFacial;
             losDiasAlVencimientoComoNumero = GenereLosDiasAlVencimiento(infoImpuesto);
             InformacionTasaBruta infoTasaBruta = new InformacionTasaBruta();

@@ -9,7 +9,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
 
         public RendimientoPorDescuento(InformacionDelRendimiento elRendimiento)
         {
-            //TODO Arreglar el detalle
+            //TODO Arreglar detalles
             elValorFacial = elRendimiento.ValorFacial;
             elValorTransadoBruto = CalculeElValorTransadoBruto(elRendimiento);
         }
