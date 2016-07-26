@@ -126,13 +126,15 @@
     <Compile Include="4. Validacion\4. Con ParameterObject\InformacionValidaciones.cs" />
     <Compile Include="4. Validacion\4. Con ParameterObject\Validaciones.cs" />
     <Compile Include="4. Validacion\4. Con ParameterObject\ValidacionesParaElImpuesto.cs" />
+    <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\InformacionValidaciones.cs" />
+    <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\Validaciones.cs" />
+    <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\ValidacionesParaElImpuesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="1. Codigos de Referencia\6. Con Polimorfismo\" />
     <Folder Include="2. Rendimiento por Descuento\6. Con Polimorfismo\" />
     <Folder Include="3. Impuestos\6. Con Polimorfismo\" />
-    <Folder Include="4. Validacion\5. Con Tell Don%27t Ask\" />
     <Folder Include="4. Validacion\6. Con Polimorfismo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,15 +10,29 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
 
         public ValorTransadoBruto(InformacionSobreImpuesto infoImpuesto)
         {
-            //TODO DEFINITIVAMENTE Arreglar Detalles
-            elValorFacial = infoImpuesto.ValorFacial;
+            elValorFacial = ObtengaElValorFacial(infoImpuesto);
             losDiasAlVencimientoComoNumero = GenereLosDiasAlVencimiento(infoImpuesto);
             InformacionTasaBruta infoTasaBruta = new InformacionTasaBruta();
-            infoTasaBruta.ValorFacial = infoImpuesto.ValorFacial;
-            infoTasaBruta.ValorTransadoNeto = infoImpuesto.ValorTransadoNeto;
-            infoTasaBruta.TasaDeImpuesto = infoImpuesto.TasaDeImpuesto;
+            infoTasaBruta.ValorFacial = ObtengaElValorFacial(infoImpuesto);
+            infoTasaBruta.ValorTransadoNeto = ObtengaElValorTransadoNeto(infoImpuesto);
+            infoTasaBruta.TasaDeImpuesto = ObtengaLaTasaDeImpuesto(infoImpuesto);
             infoTasaBruta.DiasAlVencimientoComoNumero = GenereLosDiasAlVencimiento(infoImpuesto);
             laTasaBruta = CalculeLaTasaBruta(infoTasaBruta);
+        }
+
+        private double ObtengaLaTasaDeImpuesto(InformacionSobreImpuesto infoImpuesto)
+        {
+            return infoImpuesto.TasaDeImpuesto;
+        }
+
+        private double ObtengaElValorTransadoNeto(InformacionSobreImpuesto infoImpuesto)
+        {
+            return infoImpuesto.ValorTransadoNeto;
+        }
+
+        private double ObtengaElValorFacial(InformacionSobreImpuesto infoImpuesto)
+        {
+            return infoImpuesto.ValorFacial;
         }
 
         private static double GenereLosDiasAlVencimiento(InformacionSobreImpuesto infoImpuesto)

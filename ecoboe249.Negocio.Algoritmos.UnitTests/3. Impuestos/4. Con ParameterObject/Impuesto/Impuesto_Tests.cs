@@ -12,7 +12,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConParameterObject.Impuesto_Tes
         private InformacionSobreImpuesto infoImpuesto;
 
         [TestMethod]
-        public void Impuesto()
+        public void Impuesto_TasaBrutaBienFormateada_RetornaLaTasaRedondeada()
         {
             elResultadoEsperado = 1621.6216;
 

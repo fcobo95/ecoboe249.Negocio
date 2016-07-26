@@ -1,4 +1,6 @@
-﻿namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
+﻿using System;
+
+namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
 {
     public class TasaBruta
     {
@@ -7,18 +9,18 @@
 
         public TasaBruta(InformacionTasaBruta laTasa)
         {
-            //TODO Detalles
-            laTasaDeImpuesto = laTasa.TasaDeImpuesto;
+            laTasaDeImpuesto = ObtengaLaTasaDeImpuesto(laTasa);
             laTasaNeta = CalculeLaTasaNeta(laTasa);
+        }
+
+        private double ObtengaLaTasaDeImpuesto(InformacionTasaBruta laTasa)
+        {
+            return laTasa.TasaDeImpuesto;
         }
 
         private static double CalculeLaTasaNeta(InformacionTasaBruta laTasa)
         {
-            //TODO Mas de una operacion
-            return ((laTasa.ValorFacial - 
-                laTasa.ValorTransadoNeto) / 
-                (laTasa.ValorTransadoNeto * 
-                (laTasa.DiasAlVencimientoComoNumero / 365))) * 100;
+            return laTasa.CalculeLaTasaNeta();
         }
 
         public double ComoNumero()

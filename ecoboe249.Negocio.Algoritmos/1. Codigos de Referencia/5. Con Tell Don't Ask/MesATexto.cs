@@ -13,8 +13,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
 
         private static int ObtengaElMes(InformacionDelCodigo elCodigo)
         {
-            //TODO
-            return elCodigo.Fecha.Month;
+            return elCodigo.ExtraigaElMes;
         }
 
         public string ComoTexto()

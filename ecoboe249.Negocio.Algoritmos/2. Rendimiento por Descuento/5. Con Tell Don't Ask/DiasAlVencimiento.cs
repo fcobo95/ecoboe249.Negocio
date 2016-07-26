@@ -13,8 +13,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
 
         private static TimeSpan ObtengaLosDiasAlVencimiento(InformacionDelRendimiento elRendimiento)
         {
-            //TODO Mas de una operacion
-            return elRendimiento.FechaDeVencimiento - elRendimiento.FechaActual;
+            return elRendimiento.LosDiasAlVencimiento();
         }
 
         public double ComoNumero()

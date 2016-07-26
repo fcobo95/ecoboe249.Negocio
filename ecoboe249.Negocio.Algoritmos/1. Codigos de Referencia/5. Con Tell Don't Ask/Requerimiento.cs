@@ -24,20 +24,17 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
 
         private static string FormateeElNumeroDelCliente(InformacionDelCodigo elCodigo)
         {
-            //TODO Demeter
-            return elCodigo.NumeroDelCliente.PadLeft(3, '0');
+            return elCodigo.NumeroDelClienteFormateado;
         }
 
         private static string FormateeElNumeroDelSistema(InformacionDelCodigo elCodigo)
         {
-            //TODO Demeter
-            return elCodigo.NumeroDelSistema.PadLeft(2, '0');
+            return elCodigo.NumeroDelSistemaFormateado;
         }
 
         private static string FormateeElNumeroConsecutivo(InformacionDelCodigo elCodigo)
         {
-            //TODO Demeter
-            return elCodigo.NumeroDelConsecutivo.PadLeft(12, '0');
+            return elCodigo.NumeroConsecutivoFormateado;
         }
 
         public string ComoTexto()

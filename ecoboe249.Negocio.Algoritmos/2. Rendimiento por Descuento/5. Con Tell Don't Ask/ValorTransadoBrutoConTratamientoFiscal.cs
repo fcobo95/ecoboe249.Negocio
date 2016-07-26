@@ -10,15 +10,29 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
 
         public ValorTransadoBrutoConTratamientoFiscal(InformacionDelRendimiento elRendimiento)
         {
-            //TODO Detalles
-            elValorFacial = elRendimiento.ValorFacial;
+            elValorFacial = ObtengaElValorFacialDelRendimiento(elRendimiento);
             losDiasAlVencimientoComoNumero = CalculeLosDiasAlVencimiento(elRendimiento);
             InformacionTasaBruta laTasa = new InformacionTasaBruta();
-            laTasa.ValorFacial = elRendimiento.ValorFacial;
-            laTasa.ValorTransadoNeto = elRendimiento.ValorTransadoNeto;
-            laTasa.TasaDeImpuesto = elRendimiento.TasaDeImpuesto;
+            laTasa.ValorFacial = ObtengaElValorFacialDelRendimiento(elRendimiento);
+            laTasa.ValorTransadoNeto = ObtengaElValorTransadoNetoDelRendimiento(elRendimiento);
+            laTasa.TasaDeImpuesto = ObtengaLaTasaDeImpuestoDelRendimiento(elRendimiento);
             laTasa.DiasAlVencimientoComoNumero = CalculeLosDiasAlVencimiento(elRendimiento);
             laTasaBruta = CalculeLaTasaBruta(laTasa);
+        }
+
+        private double ObtengaLaTasaDeImpuestoDelRendimiento(InformacionDelRendimiento elRendimiento)
+        {
+            return elRendimiento.TasaDeImpuesto;
+        }
+
+        private double ObtengaElValorTransadoNetoDelRendimiento(InformacionDelRendimiento elRendimiento)
+        {
+            return elRendimiento.ValorTransadoNeto;
+        }
+
+        private double ObtengaElValorFacialDelRendimiento(InformacionDelRendimiento elRendimiento)
+        {
+            return elRendimiento.ValorFacial;
         }
 
         private static double CalculeLosDiasAlVencimiento(InformacionDelRendimiento elRendimiento)

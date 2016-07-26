@@ -9,9 +9,13 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
 
         public Impuesto(InformacionSobreImpuesto infoImpuesto)
         {
-            //TODO Arreglar Detalles
             elValorTransadoBruto = GenerelElValorTransadoBruto(infoImpuesto);
-            elValorTransadoNeto = infoImpuesto.ValorTransadoNeto;
+            elValorTransadoNeto = ObtengaelValorTransadoNeto(infoImpuesto);
+        }
+
+        private double ObtengaelValorTransadoNeto(InformacionSobreImpuesto infoImpuesto)
+        {
+            return infoImpuesto.ValorTransadoNeto;
         }
 
         private static double GenerelElValorTransadoBruto(InformacionSobreImpuesto infoImpuesto)

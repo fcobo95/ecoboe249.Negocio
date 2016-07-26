@@ -1,4 +1,6 @@
-﻿namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
+﻿using System;
+
+namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
 {
     public class InformacionTasaBruta
     {
@@ -6,5 +8,11 @@
         public double ValorTransadoNeto { get; set; }
         public double TasaDeImpuesto { get; set; }
         public double DiasAlVencimientoComoNumero { get; set; }
+
+        internal double CalculeLaTasaNeta()
+        {
+            return ((ValorFacial - ValorTransadoNeto) / (ValorTransadoNeto
+                * (DiasAlVencimientoComoNumero / 365))) * 100;
+        }
     }
 }

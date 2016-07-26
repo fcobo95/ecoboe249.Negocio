@@ -10,5 +10,10 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
         public DateTime FechaDeVencimiento { get; set; }
         public DateTime FechaActual { get; set; }
         public bool TieneTratamientoFiscal { get; set; }
+
+        internal TimeSpan LosDiasAlVencimiento()
+        {
+            return FechaDeVencimiento - FechaActual;
+        }
     }
 }
