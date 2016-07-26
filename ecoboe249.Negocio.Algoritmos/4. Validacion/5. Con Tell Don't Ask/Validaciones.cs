@@ -23,43 +23,26 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.ValidacionesImpuesto
 
         private static bool VerifiqueElValorFacial(InformacionValidaciones lasValidaciones)
         {
-            //TODO Mas de una operacion
-            if (lasValidaciones.ValorFacial > 100000)
-                return true;
-            else
-                return false;
+            return lasValidaciones.ValorFacialValidado;
         }
 
         private static bool VerifiqueElValorTransadoNeto(InformacionValidaciones lasValidaciones)
         {
-            //TODO Mas de una operacion
-            if (lasValidaciones.ValorTransadoNeto > 100000)
-                return true;
-            else
-                return false;
+            return lasValidaciones.ValorTransadoNetoValidado;
         }
 
         private static bool VerifiqueLaTasaDeImpuesto(InformacionValidaciones lasValidaciones)
         {
-            //TODO Mas de una operacion
-            if ((lasValidaciones.TasaDeImpuesto < 1) & (lasValidaciones.TasaDeImpuesto > 0))
-                return true;
-            else
-                return false;
+            return lasValidaciones.TasaDeImpuestoValidada;
         }
 
         private static bool VerifiqueLaFecha(InformacionValidaciones lasValidaciones)
         {
-            //TODO Mas de una operacion
-            if (lasValidaciones.FechaActual < lasValidaciones.FechaDeVencimiento)
-                return true;
-            else
-                return false;
+            return lasValidaciones.FechaValidada;
         }
 
         public bool ValideQueSeaCierto()
         {
-            //TODO Mas de una operacion (No estoy seguro del todo, preguntar)
             if (elValorFacialEsCorrecto & elValorTransadoNetoEsCorrecto
                 & laTasaDeImpuestoEsCorrecta & laFechaActualEsMenorQueLaDeVencimientoEsValida)
                 return true;
