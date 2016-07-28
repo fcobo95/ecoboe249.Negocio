@@ -17,22 +17,22 @@
 
         private static bool VerifiqueElValorFacial(InformacionValidaciones lasValidaciones)
         {
-            return lasValidaciones.ValorFacialValidado;
+            return lasValidaciones.ValorFacialEsValido();
         }
 
         private static bool VerifiqueElValorTransadoNeto(InformacionValidaciones lasValidaciones)
         {
-            return lasValidaciones.ValorTransadoNetoValidado;
+            return lasValidaciones.ValorTransadoNetoEsValido();
         }
 
         private static bool VerifiqueLaTasaDeImpuesto(InformacionValidaciones lasValidaciones)
         {
-            return lasValidaciones.TasaDeImpuestoValidada;
+            return lasValidaciones.TasaDeImpuestoEsValido();
         }
 
         private static bool VerifiqueLaFecha(InformacionValidaciones lasValidaciones)
         {
-            return lasValidaciones.FechaValidada;
+            return lasValidaciones.FechaEsValida();
         }
 
         public bool ValideQueSeaCierto()

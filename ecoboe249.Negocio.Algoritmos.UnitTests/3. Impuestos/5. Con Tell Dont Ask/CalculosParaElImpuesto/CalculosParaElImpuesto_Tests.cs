@@ -24,8 +24,8 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Impuesto_Tests
             infoImpuesto.FechaDeVencimiento = new DateTime(2016, 10, 10);
             infoImpuesto.FechaActual = new DateTime(2016, 3, 3);
             infoImpuesto.TieneTratamientoFiscal = true;
-            
-            elResultadoObtenido = CalculosParaElImpuesto.CalculeElImpuesto(infoImpuesto);
+
+            elResultadoObtenido = infoImpuesto.Impuesto;
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -42,7 +42,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Impuesto_Tests
             infoImpuesto.FechaDeVencimiento = new DateTime(2016, 10, 10);
             infoImpuesto.FechaActual = new DateTime(2016, 3, 3);
             infoImpuesto.TieneTratamientoFiscal = true;
-            elResultadoObtenido = CalculosParaElImpuesto.CalculeElImpuesto(infoImpuesto);
+            elResultadoObtenido = infoImpuesto.Impuesto;
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -59,7 +59,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Impuesto_Tests
             infoImpuesto.FechaDeVencimiento = new DateTime(2016, 10, 10);
             infoImpuesto.FechaActual = new DateTime(2016, 3, 3);
             infoImpuesto.TieneTratamientoFiscal = false;
-            elResultadoObtenido = CalculosParaElImpuesto.CalculeElImpuesto(infoImpuesto);
+            elResultadoObtenido = infoImpuesto.Impuesto;
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }

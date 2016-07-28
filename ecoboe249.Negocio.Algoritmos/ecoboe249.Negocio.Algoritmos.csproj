@@ -64,7 +64,6 @@
     <Compile Include="1. Codigos de Referencia\3. Con Objetos\Fecha.cs" />
     <Compile Include="1. Codigos de Referencia\4. Con ParameterObject\Fecha.cs" />
     <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Año.cs" />
-    <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\CalculosDelCodigoDeReferencia.cs" />
     <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\CodigoDeReferencia.cs" />
     <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Dia.cs" />
     <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\DiaATexto.cs" />
@@ -88,7 +87,6 @@
     <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\InformacionTasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\TasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\4. Con ParameterObject\DiasAlVencimiento.cs" />
-    <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\CalculosParaElRendimientoPorDescuento.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\DiasAlVencimiento.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\InformacionDelRendimiento.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\InformacionTasaBruta.cs" />
@@ -111,7 +109,6 @@
     <Compile Include="3. Impuestos\4. Con ParameterObject\InformacionTasaBruta.cs" />
     <Compile Include="3. Impuestos\4. Con ParameterObject\TasaBruta.cs" />
     <Compile Include="3. Impuestos\4. Con ParameterObject\ValorTransadoBruto.cs" />
-    <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\CalculosParaElImpuesto.cs" />
     <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\DiasAlVencimiento.cs" />
     <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\Impuesto.cs" />
     <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\ImpuestoConTratamientoFiscal.cs" />
@@ -128,7 +125,6 @@
     <Compile Include="4. Validacion\4. Con ParameterObject\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\InformacionValidaciones.cs" />
     <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\Validaciones.cs" />
-    <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\ValidacionesParaElImpuesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

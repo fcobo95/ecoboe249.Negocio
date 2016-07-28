@@ -23,7 +23,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.RendimientoPorDe
             elRendimiento.FechaDeVencimiento = new DateTime(2016, 10, 10);
             elRendimiento.FechaActual = new DateTime(2016, 3, 3);
             elRendimiento.TieneTratamientoFiscal = true;
-            elResultadoObtenido = CalculosParaElRendimientoPorDescuento.CalculeElRendimientoPorDescuento(elRendimiento);
+            elResultadoObtenido = new RendimientoPorDescuento(elRendimiento).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);
         }
@@ -40,7 +40,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.RendimientoPorDe
             elRendimiento.FechaDeVencimiento = new DateTime(2016, 10, 10);
             elRendimiento.FechaActual = new DateTime(2016, 3, 3);
             elRendimiento.TieneTratamientoFiscal = true;
-            elResultadoObtenido = CalculosParaElRendimientoPorDescuento.CalculeElRendimientoPorDescuento(elRendimiento);
+            elResultadoObtenido = new RendimientoPorDescuento(elRendimiento).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);
         }
@@ -57,7 +57,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.RendimientoPorDe
             elRendimiento.FechaDeVencimiento = new DateTime(2016, 10, 10);
             elRendimiento.FechaActual = new DateTime(2016, 3, 3);
             elRendimiento.TieneTratamientoFiscal = false;
-            elResultadoObtenido = CalculosParaElRendimientoPorDescuento.CalculeElRendimientoPorDescuento(elRendimiento);
+            elResultadoObtenido = new RendimientoPorDescuento(elRendimiento).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);
         }

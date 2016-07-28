@@ -21,7 +21,8 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.CodigosDeReferen
             elCodigo.NumeroDelCliente = "333";
             elCodigo.NumeroDelSistema = "22";
             elCodigo.NumeroDelConsecutivo = "888888888888";
-            elResultadoObtenido = CalculosDelCodigoDeReferencia.CalculeElCodigoDeReferencia(elCodigo);
+            elResultadoObtenido = new CodigoDeReferencia(elCodigo).ComoTexto();
+            ;
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -36,7 +37,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.CodigosDeReferen
             elCodigo.NumeroDelCliente = "33";
             elCodigo.NumeroDelSistema = "22";
             elCodigo.NumeroDelConsecutivo = "888888888888";
-            elResultadoObtenido = CalculosDelCodigoDeReferencia.CalculeElCodigoDeReferencia(elCodigo);
+            elResultadoObtenido = new CodigoDeReferencia(elCodigo).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -51,7 +52,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.CodigosDeReferen
             elCodigo.NumeroDelCliente = "333";
             elCodigo.NumeroDelSistema = "2";
             elCodigo.NumeroDelConsecutivo = "888888888888";
-            elResultadoObtenido = CalculosDelCodigoDeReferencia.CalculeElCodigoDeReferencia(elCodigo);
+            elResultadoObtenido = new CodigoDeReferencia(elCodigo).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -66,7 +67,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.CodigosDeReferen
             elCodigo.NumeroDelCliente = "333";
             elCodigo.NumeroDelSistema = "22";
             elCodigo.NumeroDelConsecutivo = "888888888888";
-            elResultadoObtenido = CalculosDelCodigoDeReferencia.CalculeElCodigoDeReferencia(elCodigo);
+            elResultadoObtenido = new CodigoDeReferencia(elCodigo).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -81,7 +82,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.CodigosDeReferen
             elCodigo.NumeroDelCliente = "333";
             elCodigo.NumeroDelSistema = "22";
             elCodigo.NumeroDelConsecutivo = "888888888888";
-            elResultadoObtenido = CalculosDelCodigoDeReferencia.CalculeElCodigoDeReferencia(elCodigo);
+            elResultadoObtenido = new CodigoDeReferencia(elCodigo).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -96,7 +97,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.CodigosDeReferen
             elCodigo.NumeroDelCliente = "333";
             elCodigo.NumeroDelSistema = "22";
             elCodigo.NumeroDelConsecutivo = "4";
-            elResultadoObtenido = CalculosDelCodigoDeReferencia.CalculeElCodigoDeReferencia(elCodigo);
+            elResultadoObtenido = new CodigoDeReferencia(elCodigo).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }

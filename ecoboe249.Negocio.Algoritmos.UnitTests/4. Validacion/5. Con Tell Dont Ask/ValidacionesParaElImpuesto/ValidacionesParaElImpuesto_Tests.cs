@@ -22,7 +22,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Validaciones_Tes
             lasValidaciones.TasaDeImpuesto = 0.08;
             lasValidaciones.FechaDeVencimiento = new DateTime(2016, 10, 10);
             lasValidaciones.FechaActual = new DateTime(2016, 3, 3);
-            elResultadoObtenido = ValidacionesParaElImpuesto.Validaciones(lasValidaciones);
+            elResultadoObtenido = new Validaciones(lasValidaciones).ValideQueSeaCierto();
 
             Assert.AreEqual(elResultadoEspeardo, elResultadoObtenido);
         }
@@ -38,7 +38,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Validaciones_Tes
             lasValidaciones.TasaDeImpuesto = 0.08;
             lasValidaciones.FechaDeVencimiento = new DateTime(2016, 10, 10);
             lasValidaciones.FechaActual = new DateTime(2016, 3, 3);
-            elResultadoObtenido = ValidacionesParaElImpuesto.Validaciones(lasValidaciones);
+            elResultadoObtenido = new Validaciones(lasValidaciones).ValideQueSeaCierto();
 
             Assert.AreEqual(elResultadoEspeardo, elResultadoObtenido);
         }
@@ -54,7 +54,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Validaciones_Tes
             lasValidaciones.TasaDeImpuesto = 0;
             lasValidaciones.FechaDeVencimiento = new DateTime(2016, 10, 10);
             lasValidaciones.FechaActual = new DateTime(2016, 3, 3);
-            elResultadoObtenido = ValidacionesParaElImpuesto.Validaciones(lasValidaciones);
+            elResultadoObtenido = new Validaciones(lasValidaciones).ValideQueSeaCierto();
 
             Assert.AreEqual(elResultadoEspeardo, elResultadoObtenido);
         }
@@ -70,7 +70,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Validaciones_Tes
             lasValidaciones.TasaDeImpuesto = 1;
             lasValidaciones.FechaDeVencimiento = new DateTime(2016, 10, 10);
             lasValidaciones.FechaActual = new DateTime(2016, 3, 3);
-            elResultadoObtenido = ValidacionesParaElImpuesto.Validaciones(lasValidaciones);
+            elResultadoObtenido = new Validaciones(lasValidaciones).ValideQueSeaCierto();
 
             Assert.AreEqual(elResultadoEspeardo, elResultadoObtenido);
         }
@@ -86,7 +86,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Validaciones_Tes
             lasValidaciones.TasaDeImpuesto = 0.08;
             lasValidaciones.FechaDeVencimiento = new DateTime(2016, 10, 10);
             lasValidaciones.FechaActual = new DateTime(2016, 3, 3);
-            elResultadoObtenido = ValidacionesParaElImpuesto.Validaciones(lasValidaciones);
+            elResultadoObtenido = new Validaciones(lasValidaciones).ValideQueSeaCierto();
 
             Assert.AreEqual(elResultadoEspeardo, elResultadoObtenido);
         }
@@ -102,7 +102,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Validaciones_Tes
             lasValidaciones.TasaDeImpuesto = 0.08;
             lasValidaciones.FechaDeVencimiento = new DateTime(2016, 3, 3);
             lasValidaciones.FechaActual = new DateTime(2016, 10, 10);
-            elResultadoObtenido = ValidacionesParaElImpuesto.Validaciones(lasValidaciones);
+            elResultadoObtenido = new Validaciones(lasValidaciones).ValideQueSeaCierto();
 
             Assert.AreEqual(elResultadoEspeardo, elResultadoObtenido);
         }
@@ -118,7 +118,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConTellDontAsk.Validaciones_Tes
             lasValidaciones.TasaDeImpuesto = 0.08;
             lasValidaciones.FechaDeVencimiento = new DateTime(2016, 10, 10);
             lasValidaciones.FechaActual = new DateTime(2016, 3, 3);
-            elResultadoObtenido = ValidacionesParaElImpuesto.Validaciones(lasValidaciones);
+            elResultadoObtenido = new Validaciones(lasValidaciones).ValideQueSeaCierto();
 
             Assert.AreEqual(elResultadoEspeardo, elResultadoObtenido);
         }
