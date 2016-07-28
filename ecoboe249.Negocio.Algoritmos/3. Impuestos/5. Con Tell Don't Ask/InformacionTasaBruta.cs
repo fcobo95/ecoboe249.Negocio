@@ -9,10 +9,13 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
         public double TasaDeImpuesto { get; set; }
         public double DiasAlVencimientoComoNumero { get; set; }
 
-        internal double CalculeLaTasaNeta()
+        internal double TasaNeta
         {
-            return ((ValorFacial - ValorTransadoNeto) / (ValorTransadoNeto
-                * (DiasAlVencimientoComoNumero / 365))) * 100;
+            get
+            {
+                return ((ValorFacial - ValorTransadoNeto) / (ValorTransadoNeto
+                    * (DiasAlVencimientoComoNumero / 365))) * 100;
+            }
         }
     }
 }

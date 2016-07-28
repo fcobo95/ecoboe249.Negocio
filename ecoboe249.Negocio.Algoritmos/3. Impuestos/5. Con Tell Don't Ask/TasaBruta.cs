@@ -20,7 +20,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
 
         private static double ObtengaLaTasaNeta(InformacionTasaBruta infoTasaBruta)
         {
-            return infoTasaBruta.CalculeLaTasaNeta();
+            return infoTasaBruta.TasaNeta;
         }
 
         public double ComoNumero()
