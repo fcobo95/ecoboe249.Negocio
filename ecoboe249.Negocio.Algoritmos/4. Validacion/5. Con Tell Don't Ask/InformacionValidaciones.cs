@@ -12,42 +12,34 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.ValidacionesImpuesto
 
         public bool ValorFacialEsValido()
         {
-            {
-                if (ValorFacial > 100000)
-                    return true;
-                else
-                    return false;
-            }
+            if (ValorFacial > 100000)
+                return true;
+            else
+                return false;
         }
 
         public bool ValorTransadoNetoEsValido()
         {
-            {
-                if (ValorTransadoNeto > 100000)
-                    return true;
-                else
-                    return false;
-            }
+            if (ValorTransadoNeto > 100000)
+                return true;
+            else
+                return false;
         }
 
         public bool TasaDeImpuestoEsValido()
         {
-            {
-                if (TasaDeImpuesto < 1 & TasaDeImpuesto > 0)
-                    return true;
-                else
-                    return false;
-            }
+            if (TasaDeImpuesto < 1 & TasaDeImpuesto > 0)
+                return true;
+            else
+                return false;
         }
 
         public bool FechaEsValida()
         {
-            {
-                if (FechaActual < FechaDeVencimiento)
-                    return true;
-                else
-                    return false;
-            }
+            if (FechaActual < FechaDeVencimiento)
+                return true;
+            else
+                return false;
         }
     }
 }

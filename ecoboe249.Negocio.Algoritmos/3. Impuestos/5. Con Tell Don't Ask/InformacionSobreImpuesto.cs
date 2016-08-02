@@ -10,37 +10,30 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
         public DateTime FechaDeVencimiento { get; set; }
         public DateTime FechaActual { get; set; }
         public bool TieneTratamientoFiscal { get; set; }
+
         public double Impuesto
         {
             get
             {
-
                 if (TieneTratamientoFiscal)
-                {
-                    return GenereElImpuestoConTratamientoFiscal();
-                }
-
+                    return ImpuestoConTratamientoFiscal();
                 else
-                {
-                    return GenereElImpuestoSinTratamientoFiscal();
-                }
+                    return ImpuestoSinTratamientoFiscal();
             }
         }
 
 
-        internal TimeSpan CalculeLosDiasAlVencimiento()
+        internal TimeSpan DiasAlVencimiento()
         {
             return FechaDeVencimiento - FechaActual;
         }
 
-
-
-        private double GenereElImpuestoConTratamientoFiscal()
+        private double ImpuestoConTratamientoFiscal()
         {
             return new ImpuestoConTratamientoFiscal(this).ComoNumero();
         }
 
-        private double GenereElImpuestoSinTratamientoFiscal()
+        private double ImpuestoSinTratamientoFiscal()
         {
             return 0;
         }

@@ -11,7 +11,28 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
         public DateTime FechaActual { get; set; }
         public bool TieneTratamientoFiscal { get; set; }
 
-        internal TimeSpan LosDiasAlVencimiento()
+        public double ValorTransadoBruto
+        {
+            get
+            {
+                if (TieneTratamientoFiscal)
+                    return ValorTransadoBrutoConTratamientoFiscal();
+                else
+                    return ValorTransadoBrutoSinTratamientoFiscal();
+            }
+        }
+
+        private double ValorTransadoBrutoConTratamientoFiscal()
+        {
+            return new ValorTransadoBrutoConTratamientoFiscal(this).ComoNumero();
+        }
+
+        private double ValorTransadoBrutoSinTratamientoFiscal()
+        {
+            return ValorTransadoNeto;
+        }
+
+        internal TimeSpan DiasAlVencimiento()
         {
             return FechaDeVencimiento - FechaActual;
         }

@@ -9,18 +9,8 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
 
         public TasaBruta(InformacionTasaBruta infoTasaBruta)
         {
-            laTasaNeta = ObtengaLaTasaNeta(infoTasaBruta);
-            laTasaDeImpuesto = ObtengaLaTasaDeImpuesto(infoTasaBruta);
-        }
-
-        private double ObtengaLaTasaDeImpuesto(InformacionTasaBruta infoTasaBruta)
-        {
-            return infoTasaBruta.TasaDeImpuesto;
-        }
-
-        private static double ObtengaLaTasaNeta(InformacionTasaBruta infoTasaBruta)
-        {
-            return infoTasaBruta.TasaNeta;
+            laTasaNeta = infoTasaBruta.TasaNeta;
+            laTasaDeImpuesto = infoTasaBruta.TasaDeImpuesto;
         }
 
         public double ComoNumero()

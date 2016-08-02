@@ -9,30 +9,10 @@
 
         public Validaciones(InformacionValidaciones lasValidaciones)
         {
-            elValorFacialEsCorrecto = VerifiqueElValorFacial(lasValidaciones);
-            elValorTransadoNetoEsCorrecto = VerifiqueElValorTransadoNeto(lasValidaciones);
-            laTasaDeImpuestoEsCorrecta = VerifiqueLaTasaDeImpuesto(lasValidaciones);
-            laFechaActualEsMenorQueLaDeVencimientoEsValida = VerifiqueLaFecha(lasValidaciones);
-        }
-
-        private static bool VerifiqueElValorFacial(InformacionValidaciones lasValidaciones)
-        {
-            return lasValidaciones.ValorFacialEsValido();
-        }
-
-        private static bool VerifiqueElValorTransadoNeto(InformacionValidaciones lasValidaciones)
-        {
-            return lasValidaciones.ValorTransadoNetoEsValido();
-        }
-
-        private static bool VerifiqueLaTasaDeImpuesto(InformacionValidaciones lasValidaciones)
-        {
-            return lasValidaciones.TasaDeImpuestoEsValido();
-        }
-
-        private static bool VerifiqueLaFecha(InformacionValidaciones lasValidaciones)
-        {
-            return lasValidaciones.FechaEsValida();
+            elValorFacialEsCorrecto = lasValidaciones.ValorFacialEsValido();
+            elValorTransadoNetoEsCorrecto = lasValidaciones.ValorTransadoNetoEsValido();
+            laTasaDeImpuestoEsCorrecta = lasValidaciones.TasaDeImpuestoEsValido();
+            laFechaActualEsMenorQueLaDeVencimientoEsValida = lasValidaciones.FechaEsValida();
         }
 
         public bool ValideQueSeaCierto()

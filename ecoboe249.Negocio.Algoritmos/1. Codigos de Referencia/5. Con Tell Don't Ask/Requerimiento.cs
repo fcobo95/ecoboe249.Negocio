@@ -24,17 +24,17 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
 
         private static string FormateeElNumeroDelCliente(InformacionDelCodigo elCodigo)
         {
-            return elCodigo.NumeroDelClienteFormateado;
+            return elCodigo.ClienteFormateado;
         }
 
         private static string FormateeElNumeroDelSistema(InformacionDelCodigo elCodigo)
         {
-            return elCodigo.NumeroDelSistemaFormateado;
+            return elCodigo.SistemaFormateado;
         }
 
         private static string FormateeElNumeroConsecutivo(InformacionDelCodigo elCodigo)
         {
-            return elCodigo.NumeroConsecutivoFormateado;
+            return elCodigo.ConsecutivoFormateado;
         }
 
         public string ComoTexto()

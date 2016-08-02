@@ -9,7 +9,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
         public string NumeroDelSistema { get; set; }
         public string NumeroDelConsecutivo { get; set; }
 
-        public int ExtraigaElAño
+        public int Año
         {
             get
             {
@@ -17,7 +17,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
             }
         }
 
-        public int ExtraigaElDia
+        public int Dia
         {
             get
             {
@@ -26,7 +26,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
             }
         }
 
-        public int ExtraigaElMes
+        public int Mes
         {
             get
             {
@@ -34,7 +34,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
             }
         }
 
-        public string NumeroDelClienteFormateado
+        public string ClienteFormateado
         {
             get
             {
@@ -42,7 +42,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
             }
         }
 
-        public string NumeroDelSistemaFormateado
+        public string SistemaFormateado
         {
             get
             {
@@ -50,7 +50,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
             }
         }
 
-        public string NumeroConsecutivoFormateado
+        public string ConsecutivoFormateado
         {
             get
             {

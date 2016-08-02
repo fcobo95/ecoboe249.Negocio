@@ -13,7 +13,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
 
         private static int ObtengaElAño(InformacionDelCodigo elCodigo)
         {
-            return elCodigo.ExtraigaElAño;
+            return elCodigo.Año;
         }
 
         public string ComoTexto()

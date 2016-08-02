@@ -20,26 +20,10 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
 
         private double CalculeElValorTransadoBruto(InformacionDelRendimiento elRendimiento)
         {
-            if (elRendimiento.TieneTratamientoFiscal)
-            {
-                return ObtengaElValorTransadoBrutoConTratamientoFiscal(elRendimiento);
-            }
-
-            else
-            {
-                return ObtengaElValorTransadoBrutoSinTratamientoFiscal(elRendimiento);
-            }
+            return elRendimiento.ValorTransadoBruto;
         }
 
-        private double ObtengaElValorTransadoBrutoConTratamientoFiscal(InformacionDelRendimiento elRendimiento)
-        {
-            return new ValorTransadoBrutoConTratamientoFiscal(elRendimiento).ComoNumero();
-        }
-
-        private double ObtengaElValorTransadoBrutoSinTratamientoFiscal(InformacionDelRendimiento elRendimiento)
-        {
-            return elRendimiento.ValorTransadoNeto;
-        }
+       
 
         public double ComoNumero()
         {

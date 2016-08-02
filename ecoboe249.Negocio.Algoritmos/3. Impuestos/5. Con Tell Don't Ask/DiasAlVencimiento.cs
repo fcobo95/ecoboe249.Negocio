@@ -13,7 +13,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.Impuesto
 
         private static TimeSpan CalculeLosDiasAlVencimiento(InformacionSobreImpuesto infoImpuesto)
         {
-            return infoImpuesto.CalculeLosDiasAlVencimiento();
+            return infoImpuesto.DiasAlVencimiento();
         }
 
         public double ComoNumero()

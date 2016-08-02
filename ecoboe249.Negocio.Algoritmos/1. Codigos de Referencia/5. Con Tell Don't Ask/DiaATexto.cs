@@ -13,7 +13,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.CodigosDeReferencia
 
         private static int ObtengaElDia(InformacionDelCodigo elCodigo)
         {
-            return elCodigo.ExtraigaElDia;
+            return elCodigo.Dia;
         }
 
         public string ComoTexto()
