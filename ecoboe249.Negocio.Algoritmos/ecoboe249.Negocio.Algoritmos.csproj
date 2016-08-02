@@ -79,7 +79,7 @@
     <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\DiaATexto.cs" />
     <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\DigitoVerificador.cs" />
     <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Fecha.cs" />
-    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\InformacionDelCodigo.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Parameter Objects\InformacionDelCodigo.cs" />
     <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Mes.cs" />
     <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\MesATexto.cs" />
     <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Requerimiento.cs" />
@@ -104,8 +104,8 @@
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\TasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\ValorTransadoBrutoConTratamientoFiscal.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\DiasAlVencimiento.cs" />
-    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\InformacionDelRendimiento.cs" />
-    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\InformacionTasaBruta.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionDelRendimiento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionTasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\RendimientoPorDescuento.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\TasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\ValorTransadoBrutoConTratamientoFiscal.cs" />
@@ -135,8 +135,8 @@
     <Compile Include="3. Impuestos\6. Con Polimorfismo\DiasAlVencimiento.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\Impuesto.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\ImpuestoConTratamientoFiscal.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\InformacionSobreImpuesto.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\InformacionTasaBruta.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionSobreImpuesto.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionTasaBruta.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\TasaBruta.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\ValorTransadoBruto.cs" />
     <Compile Include="4. Validacion\1. Como un Procedimiento\ValidacionesParaElImpuesto.cs" />
@@ -148,7 +148,7 @@
     <Compile Include="4. Validacion\4. Con ParameterObject\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\InformacionValidaciones.cs" />
     <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\Validaciones.cs" />
-    <Compile Include="4. Validacion\6. Con Polimorfismo\InformacionValidaciones.cs" />
+    <Compile Include="4. Validacion\6. Con Polimorfismo\Parameter Objects\InformacionValidaciones.cs" />
     <Compile Include="4. Validacion\6. Con Polimorfismo\Validaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
