@@ -71,6 +71,14 @@
     <Compile Include="1. Codigos de Referencia\5. Con Tell Dont Ask\ElMesATexto\ElMesATexto_Tests.cs" />
     <Compile Include="1. Codigos de Referencia\5. Con Tell Dont Ask\ElMes\ElMes_Tests.cs" />
     <Compile Include="1. Codigos de Referencia\5. Con Tell Dont Ask\LaFecha\LaFecha_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\CalculosDelCodigoDeReferencia\CalculosDelCodigoDeReferencia_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\ElAño\ElAño_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\ElDiaATexto\ElDiaATexto_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\ElDia\ElDia_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\ElDigitoVerificador\ElDigitoVerificador_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\ElMesATexto\ElMesATexto_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\ElMes\ElMes_Tests.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\LaFecha\LaFecha_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\1. Como un Procedimiento\CalculosParaElRendimientoPorDescuento - Copy\CalculosParaElRendimientoPorDescuento_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\2. Con Funciones\CalculosParaElRendimientoPorDescuento - Copy\CalculosParaElRendimientoPorDescuento_Tests.cs" />
     <Compile Include="1. Codigos de Referencia\3. Con Objetos\ElAño\ElAño_Tests.cs" />
@@ -95,6 +103,11 @@
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Dont Ask\ElValorTransadoBrutoConTratamientoFiscal\ElValorTransadoBrutoConTratamientoFiscal_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Dont Ask\LaTasaBruta\LaTasaBruta_Tests.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Dont Ask\LosDiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\CalculosParaElRendimientoPorDescuento\CalculosParaElRendimientoPorDescuento_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\ElRendimientoPorDescuento\ElRendimientoPorDescuento_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\ElValorTransadoBrutoConTratamientoFiscal\ElValorTransadoBrutoConTratamientoFiscal_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\LaTasaBruta\LaTasaBruta_Tests.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\LosDiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
     <Compile Include="3. Impuestos\1. Como un Procedimiento\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
     <Compile Include="3. Impuestos\2. Con Funciones\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
     <Compile Include="3. Impuestos\3. Con Objetos\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
@@ -115,6 +128,12 @@
     <Compile Include="3. Impuestos\5. Con Tell Dont Ask\Impuesto\Impuesto_Tests.cs" />
     <Compile Include="3. Impuestos\5. Con Tell Dont Ask\TasaBruta\TasaBruta_Tests.cs" />
     <Compile Include="3. Impuestos\5. Con Tell Dont Ask\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\DiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\ImpuestoConTratamientoFiscal\ImpuestoConTratamientoFiscal_Tests.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\Impuesto\Impuesto_Tests.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\TasaBruta\TasaBruta_Tests.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
     <Compile Include="4. Validacion\1. Como un Procedimiento\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
     <Compile Include="4. Validacion\2. Con Funciones\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
     <Compile Include="4. Validacion\3. Con Objetos\Validaciones\Validaciones_Tests.cs" />
@@ -123,6 +142,8 @@
     <Compile Include="4. Validacion\4. Con ParameterObject\Validaciones\Validaciones_Tests.cs" />
     <Compile Include="4. Validacion\5. Con Tell Dont Ask\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
     <Compile Include="4. Validacion\5. Con Tell Dont Ask\Validaciones\Validaciones_Tests.cs" />
+    <Compile Include="4. Validacion\6. Con Polimorfismo\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
+    <Compile Include="4. Validacion\6. Con Polimorfismo\Validaciones\Validaciones_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -131,12 +152,7 @@
       <Name>ecoboe249.Negocio.Algoritmos</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="1. Codigos de Referencia\6. Con Polimorfismo\" />
-    <Folder Include="2. Rendimiento por Descuento\6. Con Polimorfismo\" />
-    <Folder Include="3. Impuestos\6. Con Polimorfismo\" />
-    <Folder Include="4. Validacion\6. Con Polimorfismo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

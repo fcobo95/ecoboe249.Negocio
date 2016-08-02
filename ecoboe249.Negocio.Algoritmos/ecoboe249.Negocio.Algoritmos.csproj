@@ -73,6 +73,16 @@
     <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Mes.cs" />
     <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\MesATexto.cs" />
     <Compile Include="1. Codigos de Referencia\5. Con Tell Don%27t Ask\Requerimiento.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Año.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\CodigoDeReferencia.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Dia.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\DiaATexto.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\DigitoVerificador.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Fecha.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\InformacionDelCodigo.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Mes.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\MesATexto.cs" />
+    <Compile Include="1. Codigos de Referencia\6. Con Polimorfismo\Requerimiento.cs" />
     <Compile Include="2. Rendimiento por Descuento\1. Como un Procedimiento\CalculosParaElRendimientoPorDescuento.cs" />
     <Compile Include="2. Rendimiento por Descuento\2. Con Funciones\CalculosParaElRendimientoPorDescuento.cs" />
     <Compile Include="2. Rendimiento por Descuento\3. Con Objetos\CalculosParaElRendimientoPorDescuento.cs" />
@@ -93,6 +103,12 @@
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\RendimientoPorDescuento.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\TasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\ValorTransadoBrutoConTratamientoFiscal.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\DiasAlVencimiento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\InformacionDelRendimiento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\InformacionTasaBruta.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\RendimientoPorDescuento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\TasaBruta.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\ValorTransadoBrutoConTratamientoFiscal.cs" />
     <Compile Include="3. Impuestos\1. Como un Procedimiento\CalculosParaElImpuesto.cs" />
     <Compile Include="3. Impuestos\2. Con Funciones\CalculosParaElImpuesto.cs" />
     <Compile Include="3. Impuestos\3. Con Objetos\CalculosParaElImpuesto.cs" />
@@ -116,6 +132,13 @@
     <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\InformacionTasaBruta.cs" />
     <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\TasaBruta.cs" />
     <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\ValorTransadoBruto.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\DiasAlVencimiento.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\Impuesto.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\ImpuestoConTratamientoFiscal.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\InformacionSobreImpuesto.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\InformacionTasaBruta.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\TasaBruta.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\ValorTransadoBruto.cs" />
     <Compile Include="4. Validacion\1. Como un Procedimiento\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\2. Con Funciones\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\3. Con Objetos\Validaciones.cs" />
@@ -125,14 +148,11 @@
     <Compile Include="4. Validacion\4. Con ParameterObject\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\InformacionValidaciones.cs" />
     <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\Validaciones.cs" />
+    <Compile Include="4. Validacion\6. Con Polimorfismo\InformacionValidaciones.cs" />
+    <Compile Include="4. Validacion\6. Con Polimorfismo\Validaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="1. Codigos de Referencia\6. Con Polimorfismo\" />
-    <Folder Include="2. Rendimiento por Descuento\6. Con Polimorfismo\" />
-    <Folder Include="3. Impuestos\6. Con Polimorfismo\" />
-    <Folder Include="4. Validacion\6. Con Polimorfismo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
