@@ -32,9 +32,12 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
             return ValorTransadoNeto;
         }
 
-        internal TimeSpan DiasAlVencimiento()
+        internal TimeSpan DiasAlVencimiento
         {
-            return FechaDeVencimiento - FechaActual;
+            get
+            {
+                return FechaDeVencimiento - FechaActual;
+            }
         }
     }
 }

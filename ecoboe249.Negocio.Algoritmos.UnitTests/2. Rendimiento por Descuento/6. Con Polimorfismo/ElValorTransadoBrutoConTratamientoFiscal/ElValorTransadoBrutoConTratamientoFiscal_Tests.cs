@@ -9,14 +9,14 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
     {
         private double elResultadoEsperado;
         private double elResultadoObtenido;
-        InformacionDelRendimiento elRendimiento;
+        private InformacionTasaBruta elRendimiento;
 
         [TestMethod]
         public void ElValorTransadoBrutoConTratamientoFiscal_CalculaElValorTransadoBruto_RetornaElValorConTratamientoFiscal()
         {
             elResultadoEsperado = 298378.3784;
 
-            elRendimiento = new InformacionDelRendimiento();
+            elRendimiento = new InformacionTasaBruta();
             elRendimiento.ValorFacial = 320000;
             elRendimiento.ValorTransadoNeto = 300000;
             elRendimiento.TasaDeImpuesto = 0.08;

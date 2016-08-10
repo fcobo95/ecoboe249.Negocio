@@ -104,7 +104,9 @@
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\TasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\5. Con Tell Don%27t Ask\ValorTransadoBrutoConTratamientoFiscal.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\DiasAlVencimiento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionValorTransadoConTratamiento.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionDelRendimiento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionValorTransadoSinTratamiento.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionTasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\RendimientoPorDescuento.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\TasaBruta.cs" />

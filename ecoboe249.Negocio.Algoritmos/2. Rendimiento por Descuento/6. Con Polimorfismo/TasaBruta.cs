@@ -20,7 +20,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
 
         private static double CalculeLaTasaNeta(InformacionTasaBruta laTasa)
         {
-            return laTasa.CalculeLaTasaNeta();
+            return laTasa.TasaNeta();
         }
 
         public double ComoNumero()

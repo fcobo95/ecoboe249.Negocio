@@ -13,7 +13,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
 
         private static TimeSpan ObtengaLosDiasAlVencimiento(InformacionDelRendimiento elRendimiento)
         {
-            return elRendimiento.DiasAlVencimiento();
+            return elRendimiento.DiasAlVencimiento;
         }
 
         public double ComoNumero()

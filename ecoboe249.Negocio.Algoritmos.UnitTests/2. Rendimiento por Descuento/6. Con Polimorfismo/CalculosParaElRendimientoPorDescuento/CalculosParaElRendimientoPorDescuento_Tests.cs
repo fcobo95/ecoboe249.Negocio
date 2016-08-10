@@ -9,14 +9,14 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
     {
         private double elResultadoEsperado;
         private double elResultadoObtenido;
-        private InformacionDelRendimiento elRendimiento;
+        private InformacionTasaBruta elRendimiento;
 
         [TestMethod]
         public void CalculeElRendimientoPorDescuento_TieneTratamientoFiscal_RedondeeHaciaAbajo()
         {
             elResultadoEsperado = 21621.6216;
 
-            elRendimiento = new InformacionDelRendimiento();
+            elRendimiento = new InformacionTasaBruta();
             elRendimiento.ValorFacial = 320000;
             elRendimiento.ValorTransadoNeto = 300000;
             elRendimiento.TasaDeImpuesto = 0.08;
@@ -33,7 +33,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
         {
             elResultadoEsperado = 22159.3592;
 
-            elRendimiento = new InformacionDelRendimiento();
+            elRendimiento = new InformacionTasaBruta();
             elRendimiento.ValorFacial = 320500.0000;
             elRendimiento.ValorTransadoNeto = 300000;
             elRendimiento.TasaDeImpuesto = 0.08;
@@ -50,7 +50,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
         {
             elResultadoEsperado = 19999.9999;
 
-            elRendimiento = new InformacionDelRendimiento();
+            elRendimiento = new InformacionTasaBruta();
             elRendimiento.ValorFacial = 320000.0000;
             elRendimiento.ValorTransadoNeto = 300000.0001;
             elRendimiento.TasaDeImpuesto = 0.08;

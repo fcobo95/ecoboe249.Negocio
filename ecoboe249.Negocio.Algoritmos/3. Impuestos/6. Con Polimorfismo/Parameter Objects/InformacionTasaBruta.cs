@@ -2,11 +2,8 @@
 
 namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
 {
-    public class InformacionTasaBruta
+    public class InformacionTasaBruta : InformacionSobreImpuesto
     {
-        public double ValorFacial { get; set; }
-        public double ValorTransadoNeto { get; set; }
-        public double TasaDeImpuesto { get; set; }
         public double DiasAlVencimientoComoNumero { get; set; }
 
         internal double TasaNeta

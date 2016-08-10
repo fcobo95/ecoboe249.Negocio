@@ -2,14 +2,11 @@
 
 namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
 {
-    public class InformacionTasaBruta
+    public class InformacionTasaBruta : InformacionDelRendimiento
     {
-        public double ValorFacial { get; set; }
-        public double ValorTransadoNeto { get; set; }
-        public double TasaDeImpuesto { get; set; }
         public double DiasAlVencimientoComoNumero { get; set; }
 
-        internal double CalculeLaTasaNeta()
+        internal double TasaNeta()
         {
             return ((ValorFacial - ValorTransadoNeto) / (ValorTransadoNeto *
                    (DiasAlVencimientoComoNumero / 365))) * 100;
