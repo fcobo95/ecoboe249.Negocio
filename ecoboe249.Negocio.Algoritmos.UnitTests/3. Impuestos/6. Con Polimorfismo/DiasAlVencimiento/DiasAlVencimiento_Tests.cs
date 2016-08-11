@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento;
 
 namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.Impuesto_Tests
 {

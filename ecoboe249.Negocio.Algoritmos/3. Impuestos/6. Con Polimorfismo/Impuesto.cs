@@ -15,7 +15,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
 
         private static double GenerelElValorTransadoBruto(InformacionTasaBruta infoImpuesto)
         {
-            return new ValorTransadoBruto(infoImpuesto).ComoNumero();
+            return new ValorTransadoBrutoConTratamientoFiscal(infoImpuesto).ComoNumero();
         }
 
         public double ComoNumero()
