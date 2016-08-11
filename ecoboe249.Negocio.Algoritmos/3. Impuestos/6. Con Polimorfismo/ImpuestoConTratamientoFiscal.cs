@@ -1,4 +1,5 @@
 ﻿using System;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento;
 
 namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
 {
@@ -6,12 +7,12 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
     {
         private double elImpuesto;
 
-        public ImpuestoConTratamientoFiscal(InformacionSobreImpuesto infoImpuesto)
+        public ImpuestoConTratamientoFiscal(InformacionTasaBruta infoImpuesto)
         {
             elImpuesto = CalculeElImpuesto(infoImpuesto);
         }
 
-        private static double CalculeElImpuesto(InformacionSobreImpuesto infoImpuesto)
+        private static double CalculeElImpuesto(InformacionTasaBruta infoImpuesto)
         {
             return new Impuesto(infoImpuesto).ComoNumero();
         }

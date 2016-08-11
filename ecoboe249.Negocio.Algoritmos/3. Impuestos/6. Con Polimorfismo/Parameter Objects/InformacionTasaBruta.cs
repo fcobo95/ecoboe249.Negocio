@@ -1,18 +1,26 @@
-﻿using System;
+﻿//using System;
 
-namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
-{
-    public class InformacionTasaBruta : InformacionSobreImpuesto
-    {
-        public double DiasAlVencimientoComoNumero { get; set; }
+//namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
+//{
+//    public abstract class InformacionTasaBruta : InformacionSobreImpuesto
+//    {
+//        public double DiasAlVencimientoComoNumero
+//        {
+//            get
+//            {
+//                return new DiasAlVencimiento(this).ComoNumero();
+//            }
+//        }
 
-        internal double TasaNeta
-        {
-            get
-            {
-                return ((ValorFacial - ValorTransadoNeto) / (ValorTransadoNeto
-                    * (DiasAlVencimientoComoNumero / 365))) * 100;
-            }
-        }
-    }
-}
+//        public abstract double Impuesto { get; }
+
+//        internal double TasaNeta
+//        {
+//            get
+//            {
+//                return ((ValorFacial - ValorTransadoNeto) / (ValorTransadoNeto
+//                    * (DiasAlVencimientoComoNumero / 365))) * 100;
+//            }
+//        }
+//    }
+//}

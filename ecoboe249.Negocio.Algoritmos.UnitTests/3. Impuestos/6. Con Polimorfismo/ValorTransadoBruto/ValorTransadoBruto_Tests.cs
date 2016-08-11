@@ -9,14 +9,14 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.Impuesto_Tests
     {
         private double elResultadoEsperado;
         private double elResutaldoObtenido;
-        private InformacionSobreImpuesto infoImpuesto;
+        private InformacionImpuestoConTratamientoFiscal infoImpuesto;
 
         [TestMethod]
         public void ValorTransadoBruto()
         {
             elResultadoEsperado = 298378.3784;
 
-            infoImpuesto = new InformacionSobreImpuesto();
+            infoImpuesto = new InformacionImpuestoConTratamientoFiscal();
             infoImpuesto.ValorFacial = 320000;
             infoImpuesto.ValorTransadoNeto = 300000;
             infoImpuesto.TasaDeImpuesto = 0.08;

@@ -9,21 +9,22 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
     {
         private double elResultadoEsperado;
         private double elResultadoObtenido;
-        private InformacionDelRendimiento elRendimiento;
+        private InformacionValorTransadoSinTratamiento elRendimiento;
+        private InformacionValorTransadoConTratamiento elRendimientoCon;
 
         [TestMethod]
-        public void ElRendimientoPorDescuento_CalculaElValorTransadoBruto_RetornaElValorSinTratamientoFiscal()
+        public void ElRendimientoPorDescuento_CalculaElValorTransadoBruto_RetornaElValorConTratamientoFiscal()
         {
             elResultadoEsperado = 21621.6216;
 
-            elRendimiento = new InformacionDelRendimiento();
-            elRendimiento.ValorFacial = 320000;
-            elRendimiento.ValorTransadoNeto = 300000;
-            elRendimiento.TasaDeImpuesto = 0.08;
-            elRendimiento.FechaDeVencimiento = new DateTime(2016, 10, 10);
-            elRendimiento.FechaActual = new DateTime(2016, 3, 3);
-            elRendimiento.TieneTratamientoFiscal = true;
-            elResultadoObtenido = new RendimientoPorDescuento(elRendimiento).ComoNumero();
+            elRendimientoCon = new InformacionValorTransadoConTratamiento();
+            elRendimientoCon.ValorFacial = 320000;
+            elRendimientoCon.ValorTransadoNeto = 300000;
+            elRendimientoCon.TasaDeImpuesto = 0.08;
+            elRendimientoCon.FechaDeVencimiento = new DateTime(2016, 10, 10);
+            elRendimientoCon.FechaActual = new DateTime(2016, 3, 3);
+            elRendimientoCon.TieneTratamientoFiscal = true;
+            elResultadoObtenido = new RendimientoPorDescuento(elRendimientoCon).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);
         }
@@ -33,7 +34,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
         {
             elResultadoEsperado = 20000;
 
-            elRendimiento = new InformacionDelRendimiento();
+            elRendimiento = new InformacionValorTransadoSinTratamiento();
             elRendimiento.ValorFacial = 320000;
             elRendimiento.ValorTransadoNeto = 300000;
             elRendimiento.TasaDeImpuesto = 0.08;

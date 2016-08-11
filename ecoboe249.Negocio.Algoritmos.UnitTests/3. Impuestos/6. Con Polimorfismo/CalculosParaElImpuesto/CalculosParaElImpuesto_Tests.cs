@@ -10,24 +10,25 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.Impuesto_Tests
     {
         private double elResultadoObtenido;
         private double elResultadoEsperado;
-        private InformacionSobreImpuesto infoImpuesto;
+        private InformacionImpuestoSinTratamientoFiscal infoImpuestoSin;
+        private InformacionImpuestoConTratamientoFiscal infoImpuestoCon;
 
         [TestMethod]
         public void CalculosParaElImpuesto_TieneTratamientoFiscal_RedondeeHaciaAbajo()
         {
             elResultadoEsperado = 1621.6216;
 
-            infoImpuesto = new InformacionSobreImpuesto();
-            infoImpuesto.ValorFacial = 320000;
-            infoImpuesto.ValorTransadoNeto = 300000;
-            infoImpuesto.TasaDeImpuesto = 0.08;
-            infoImpuesto.FechaDeVencimiento = new DateTime(2016, 10, 10);
-            infoImpuesto.FechaActual = new DateTime(2016, 3, 3);
-            infoImpuesto.TieneTratamientoFiscal = true;
+            infoImpuestoCon = new InformacionImpuestoConTratamientoFiscal();
+            infoImpuestoCon.ValorFacial = 320000;
+            infoImpuestoCon.ValorTransadoNeto = 300000;
+            infoImpuestoCon.TasaDeImpuesto = 0.08;
+            infoImpuestoCon.FechaDeVencimiento = new DateTime(2016, 10, 10);
+            infoImpuestoCon.FechaActual = new DateTime(2016, 3, 3);
+            infoImpuestoCon.TieneTratamientoFiscal = true;
 
-            elResultadoObtenido = infoImpuesto.Impuesto;
+            elResultadoObtenido = new Impuesto(infoImpuestoCon).ComoNumero();
 
-            Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
+            Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.001);
         }
 
         [TestMethod]
@@ -35,16 +36,17 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.Impuesto_Tests
         {
             elResultadoEsperado = 1659.3592;
 
-            infoImpuesto = new InformacionSobreImpuesto();
-            infoImpuesto.ValorFacial = 320500;
-            infoImpuesto.ValorTransadoNeto = 300000;
-            infoImpuesto.TasaDeImpuesto = 0.08;
-            infoImpuesto.FechaDeVencimiento = new DateTime(2016, 10, 10);
-            infoImpuesto.FechaActual = new DateTime(2016, 3, 3);
-            infoImpuesto.TieneTratamientoFiscal = true;
-            elResultadoObtenido = infoImpuesto.Impuesto;
+            infoImpuestoCon = new InformacionImpuestoConTratamientoFiscal();
+            infoImpuestoCon.ValorFacial = 320500;
+            infoImpuestoCon.ValorTransadoNeto = 300000;
+            infoImpuestoCon.TasaDeImpuesto = 0.08;
+            infoImpuestoCon.FechaDeVencimiento = new DateTime(2016, 10, 10);
+            infoImpuestoCon.FechaActual = new DateTime(2016, 3, 3);
+            infoImpuestoCon.TieneTratamientoFiscal = true;
 
-            Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
+            elResultadoObtenido = new Impuesto(infoImpuestoCon).ComoNumero();
+
+            Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);
         }
 
         [TestMethod]
@@ -52,14 +54,15 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.Impuesto_Tests
         {
             elResultadoEsperado = 0;
 
-            infoImpuesto = new InformacionSobreImpuesto();
-            infoImpuesto.ValorFacial = 320000;
-            infoImpuesto.ValorTransadoNeto = 300000.0001;
-            infoImpuesto.TasaDeImpuesto = 0.08;
-            infoImpuesto.FechaDeVencimiento = new DateTime(2016, 10, 10);
-            infoImpuesto.FechaActual = new DateTime(2016, 3, 3);
-            infoImpuesto.TieneTratamientoFiscal = false;
-            elResultadoObtenido = infoImpuesto.Impuesto;
+            infoImpuestoSin = new InformacionImpuestoSinTratamientoFiscal();
+            infoImpuestoSin.ValorFacial = 320000;
+            infoImpuestoSin.ValorTransadoNeto = 300000.0001;
+            infoImpuestoSin.TasaDeImpuesto = 0.08;
+            infoImpuestoSin.FechaDeVencimiento = new DateTime(2016, 10, 10);
+            infoImpuestoSin.FechaActual = new DateTime(2016, 3, 3);
+            infoImpuestoSin.TieneTratamientoFiscal = false;
+
+            elResultadoObtenido = new Impuesto(infoImpuestoSin).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }

@@ -137,6 +137,8 @@
     <Compile Include="3. Impuestos\6. Con Polimorfismo\DiasAlVencimiento.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\Impuesto.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\ImpuestoConTratamientoFiscal.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionImpuestoSinTratamientoFiscal.cs" />
+    <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionImpuestoConTratamientoFiscal.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionSobreImpuesto.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionTasaBruta.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\TasaBruta.cs" />
@@ -152,9 +154,16 @@
     <Compile Include="4. Validacion\5. Con Tell Don%27t Ask\Validaciones.cs" />
     <Compile Include="4. Validacion\6. Con Polimorfismo\Parameter Objects\InformacionValidaciones.cs" />
     <Compile Include="4. Validacion\6. Con Polimorfismo\Validaciones.cs" />
+    <Compile Include="5. Inversiones\1. Como un Procedimiento\GeneradorDeInversiones.cs" />
+    <Compile Include="5. Inversiones\1. Como un Procedimiento\NuevaInversion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="5. Inversiones\2. Con Funciones\" />
+    <Folder Include="5. Inversiones\3. Con Objetos\" />
+    <Folder Include="5. Inversiones\5. Con Tell Don%27t Ask\" />
+    <Folder Include="5. Inversiones\6. Con Polimorfismo\Parameter Objects\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

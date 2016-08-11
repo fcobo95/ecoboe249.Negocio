@@ -1,10 +1,15 @@
-﻿namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
+﻿using System;
+
+namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
 {
     public class InformacionValorTransadoSinTratamiento : InformacionTasaBruta
     {
-        private double ValorTransadoBrutoSinTratamientoFiscal()
+        public override double ValorTransadoBruto
         {
-            return ValorTransadoNeto;
+            get
+            {
+                return ValorTransadoNeto;
+            }
         }
     }
 }

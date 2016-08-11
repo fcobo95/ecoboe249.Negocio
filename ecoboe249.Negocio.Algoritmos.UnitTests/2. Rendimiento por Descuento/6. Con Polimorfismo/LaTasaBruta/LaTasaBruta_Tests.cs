@@ -9,18 +9,20 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
     {
         private double elResultadoEsperado;
         private double elResultadoObtenido;
-        private InformacionTasaBruta laTasa;
+        private InformacionValorTransadoConTratamiento laTasa;
 
         [TestMethod]
         public void LaTasaBruta_CalculaElValorTransadoBruto_RetornaElValorConTratamientoFiscal()
         {
             elResultadoEsperado = 11.9680;
 
-            laTasa = new InformacionTasaBruta();
+            laTasa = new InformacionValorTransadoConTratamiento();
             laTasa.ValorFacial = 320000;
             laTasa.ValorTransadoNeto = 300000;
             laTasa.TasaDeImpuesto = 0.08;
-            laTasa.DiasAlVencimientoComoNumero = 221;
+            laTasa.FechaActual = new DateTime(2016, 3, 3);
+            laTasa.FechaDeVencimiento = new DateTime(2016, 10, 10);
+
             elResultadoObtenido = new TasaBruta(laTasa).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);

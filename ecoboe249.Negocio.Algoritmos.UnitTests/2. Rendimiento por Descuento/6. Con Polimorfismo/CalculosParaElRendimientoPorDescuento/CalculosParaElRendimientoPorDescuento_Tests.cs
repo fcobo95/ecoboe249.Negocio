@@ -9,14 +9,15 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
     {
         private double elResultadoEsperado;
         private double elResultadoObtenido;
-        private InformacionTasaBruta elRendimiento;
+        private InformacionValorTransadoConTratamiento elRendimiento;
+        private InformacionValorTransadoSinTratamiento elRendimientoSin;
 
         [TestMethod]
         public void CalculeElRendimientoPorDescuento_TieneTratamientoFiscal_RedondeeHaciaAbajo()
         {
             elResultadoEsperado = 21621.6216;
 
-            elRendimiento = new InformacionTasaBruta();
+            elRendimiento = new InformacionValorTransadoConTratamiento();
             elRendimiento.ValorFacial = 320000;
             elRendimiento.ValorTransadoNeto = 300000;
             elRendimiento.TasaDeImpuesto = 0.08;
@@ -33,7 +34,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
         {
             elResultadoEsperado = 22159.3592;
 
-            elRendimiento = new InformacionTasaBruta();
+            elRendimiento = new InformacionValorTransadoConTratamiento();
             elRendimiento.ValorFacial = 320500.0000;
             elRendimiento.ValorTransadoNeto = 300000;
             elRendimiento.TasaDeImpuesto = 0.08;
@@ -50,14 +51,14 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
         {
             elResultadoEsperado = 19999.9999;
 
-            elRendimiento = new InformacionTasaBruta();
-            elRendimiento.ValorFacial = 320000.0000;
-            elRendimiento.ValorTransadoNeto = 300000.0001;
-            elRendimiento.TasaDeImpuesto = 0.08;
-            elRendimiento.FechaDeVencimiento = new DateTime(2016, 10, 10);
-            elRendimiento.FechaActual = new DateTime(2016, 3, 3);
-            elRendimiento.TieneTratamientoFiscal = false;
-            elResultadoObtenido = new RendimientoPorDescuento(elRendimiento).ComoNumero();
+            elRendimientoSin = new InformacionValorTransadoSinTratamiento();
+            elRendimientoSin.ValorFacial = 320000.0000;
+            elRendimientoSin.ValorTransadoNeto = 300000.0001;
+            elRendimientoSin.TasaDeImpuesto = 0.08;
+            elRendimientoSin.FechaDeVencimiento = new DateTime(2016, 10, 10);
+            elRendimientoSin.FechaActual = new DateTime(2016, 3, 3);
+            elRendimientoSin.TieneTratamientoFiscal = false;
+            elResultadoObtenido = new RendimientoPorDescuento(elRendimientoSin).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);
         }

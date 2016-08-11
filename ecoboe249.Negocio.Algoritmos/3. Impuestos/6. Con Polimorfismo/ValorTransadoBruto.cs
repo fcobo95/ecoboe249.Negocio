@@ -1,4 +1,4 @@
-﻿using System;
+﻿using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento;
 
 namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
 {
@@ -8,36 +8,16 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
         private double laTasaBruta;
         private double elValorFacial;
 
-        public ValorTransadoBruto(InformacionSobreImpuesto infoImpuesto)
+        public ValorTransadoBruto(InformacionTasaBruta infoImpuesto)
         {
             elValorFacial = ObtengaElValorFacial(infoImpuesto);
-            losDiasAlVencimientoComoNumero = GenereLosDiasAlVencimiento(infoImpuesto);
-            InformacionTasaBruta infoTasaBruta = new InformacionTasaBruta();
-            infoTasaBruta.ValorFacial = ObtengaElValorFacial(infoImpuesto);
-            infoTasaBruta.ValorTransadoNeto = ObtengaElValorTransadoNeto(infoImpuesto);
-            infoTasaBruta.TasaDeImpuesto = ObtengaLaTasaDeImpuesto(infoImpuesto);
-            infoTasaBruta.DiasAlVencimientoComoNumero = GenereLosDiasAlVencimiento(infoImpuesto);
-            laTasaBruta = CalculeLaTasaBruta(infoTasaBruta);
+            losDiasAlVencimientoComoNumero = infoImpuesto.DiasAlVencimientoComoNumero;
+            laTasaBruta = CalculeLaTasaBruta(infoImpuesto);
         }
 
-        private double ObtengaLaTasaDeImpuesto(InformacionSobreImpuesto infoImpuesto)
-        {
-            return infoImpuesto.TasaDeImpuesto;
-        }
-
-        private double ObtengaElValorTransadoNeto(InformacionSobreImpuesto infoImpuesto)
-        {
-            return infoImpuesto.ValorTransadoNeto;
-        }
-
-        private double ObtengaElValorFacial(InformacionSobreImpuesto infoImpuesto)
+        private double ObtengaElValorFacial(InformacionDelRendimiento infoImpuesto)
         {
             return infoImpuesto.ValorFacial;
-        }
-
-        private static double GenereLosDiasAlVencimiento(InformacionSobreImpuesto infoImpuesto)
-        {
-            return new DiasAlVencimiento(infoImpuesto).ComoNumero();
         }
 
         private static double CalculeLaTasaBruta(InformacionTasaBruta infoTasaBruta)

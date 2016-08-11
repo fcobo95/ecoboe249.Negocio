@@ -7,7 +7,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
         private double elValorFacial;
         private double elValorTransadoBruto;
 
-        public RendimientoPorDescuento(InformacionDelRendimiento elRendimiento)
+        public RendimientoPorDescuento(InformacionTasaBruta elRendimiento)
         {
             elValorFacial = ObtengaElValorFacial(elRendimiento);
             elValorTransadoBruto = CalculeElValorTransadoBruto(elRendimiento);
@@ -18,7 +18,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
             return elRendimiento.ValorFacial;
         }
 
-        private double CalculeElValorTransadoBruto(InformacionDelRendimiento elRendimiento)
+        private double CalculeElValorTransadoBruto(InformacionTasaBruta elRendimiento)
         {
             return elRendimiento.ValorTransadoBruto;
         }

@@ -9,14 +9,14 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
     {
         private double elResultadoEsperado;
         private double elResultadoObtenido;
-        private InformacionTasaBruta elRendimiento;
+        private InformacionValorTransadoConTratamiento elRendimiento;
 
         [TestMethod]
         public void LosDiasAlVencimiento_ExtraeLosDiasAlVencimiento_RetornaLaCantidadDeDias()
         {
             elResultadoEsperado = 221;
 
-            elRendimiento = new InformacionTasaBruta();
+            elRendimiento = new InformacionValorTransadoConTratamiento();
             elRendimiento.FechaDeVencimiento = new DateTime(2016, 10, 10);
             elRendimiento.FechaActual = new DateTime(2016, 3, 3);
             elResultadoObtenido = new DiasAlVencimiento(elRendimiento).ComoNumero();

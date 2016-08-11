@@ -23,8 +23,6 @@ namespace ecoboe249.Negocio.Algoritmos.ConTellDontAsk.RendimientoPorDescuento
             return elRendimiento.ValorTransadoBruto;
         }
 
-       
-
         public double ComoNumero()
         {
             return elValorFacial - elValorTransadoBruto;

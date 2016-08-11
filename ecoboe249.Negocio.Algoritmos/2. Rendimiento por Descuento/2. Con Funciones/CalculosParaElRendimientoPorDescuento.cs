@@ -13,18 +13,14 @@ namespace ecoboe249.Negocio.Algoritmos.ConFunciones.RendimientoPorDescuento
             return GenereElRendimientoPorDescuentoCalculado(elValorFacial, elValorTransadoBruto);
         }
 
-        private static double CalculeElValorTransadoBruto(double elValorFacial, double elValorTransadoNeto, double laTasaDeImpuesto, DateTime laFechaDeVencimiento, DateTime laFechaActual, bool TieneTratamientoFiscal)
+        private static double CalculeElValorTransadoBruto(double elValorFacial,
+            double elValorTransadoNeto, double laTasaDeImpuesto, DateTime laFechaDeVencimiento,
+            DateTime laFechaActual, bool TieneTratamientoFiscal)
         {
             if (TieneTratamientoFiscal)
-            {
                 return CalculeElValorTransadoBrutoConTratamientoFiscal(elValorFacial, elValorTransadoNeto, laTasaDeImpuesto, laFechaDeVencimiento, laFechaActual);
-            }
-
             else
-            {
                 return CalculeElValorTransadoBrutoSinTratamientoFiscal(elValorTransadoNeto);
-            }
-
         }
 
         private static double CalculeElValorTransadoBrutoConTratamientoFiscal(double elValorFacial, double elValorTransadoNeto, double laTasaDeImpuesto, DateTime laFechaDeVencimiento, DateTime laFechaActual)

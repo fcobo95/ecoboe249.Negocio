@@ -1,4 +1,5 @@
 ﻿using System;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento;
 
 namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
 {
@@ -6,14 +7,9 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
     {
         private TimeSpan losDiasAlVencimiento;
 
-        public DiasAlVencimiento(InformacionSobreImpuesto infoImpuesto)
+        public DiasAlVencimiento(InformacionDelRendimiento infoImpuesto)
         {
-            losDiasAlVencimiento = CalculeLosDiasAlVencimiento(infoImpuesto);
-        }
-
-        private static TimeSpan CalculeLosDiasAlVencimiento(InformacionSobreImpuesto infoImpuesto)
-        {
-            return infoImpuesto.DiasAlVencimiento();
+            losDiasAlVencimiento = infoImpuesto.DiasAlVencimiento;
         }
 
         public double ComoNumero()
