@@ -60,7 +60,6 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.Impuesto_Tests
             infoImpuestoSin.TasaDeImpuesto = 0.08;
             infoImpuestoSin.FechaDeVencimiento = new DateTime(2016, 10, 10);
             infoImpuestoSin.FechaActual = new DateTime(2016, 3, 3);
-            infoImpuestoSin.TieneTratamientoFiscal = false;
 
             elResultadoObtenido = new Impuesto(infoImpuestoSin).ComoNumero();
 

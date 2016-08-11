@@ -138,8 +138,6 @@
     <Compile Include="3. Impuestos\6. Con Polimorfismo\ImpuestoConTratamientoFiscal.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionImpuestoSinTratamientoFiscal.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionImpuestoConTratamientoFiscal.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionSobreImpuesto.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionTasaBruta.cs" />
     <Compile Include="4. Validacion\1. Como un Procedimiento\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\2. Con Funciones\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\3. Con Objetos\Validaciones.cs" />
