@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuentos;
 
 namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorDescuento_Tests
 {

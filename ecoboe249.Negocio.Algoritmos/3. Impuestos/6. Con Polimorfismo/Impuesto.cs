@@ -1,6 +1,6 @@
-﻿using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento;
+﻿using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuentos;
 
-namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto
+namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuestos
 {
     public class Impuesto
     {

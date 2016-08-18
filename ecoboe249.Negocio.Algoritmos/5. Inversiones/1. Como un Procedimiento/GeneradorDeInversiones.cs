@@ -1,6 +1,7 @@
 ﻿using System;
 using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.CodigosDeReferencia;
-using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuentos;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuestos;
 
 
 namespace ecoboe249.Negocio.Algoritmos.ComoUnProcedimiento.GeneracionDeInversiones
@@ -21,12 +22,31 @@ namespace ecoboe249.Negocio.Algoritmos.ComoUnProcedimiento.GeneracionDeInversion
             laInformacion.Fecha = laFechaActual;
             laNuevaInversion.CodigoDeReferencia = new CodigoDeReferencia(laInformacion).ComoTexto();
 
-            
-            laNuevaInversion.TasaNeta = 0;
-            laNuevaInversion.TasaBruta = 0;
-            laNuevaInversion.ValorTransadoBruto = 0;
-            laNuevaInversion.ImpuestoPagado = 0;
-            laNuevaInversion.RendimientoPorDescuento = 0;
+            if (TieneTratamientoFiscal)
+            {
+                InformacionValorTransadoConTratamiento laInformacionDeRendimiento = new InformacionValorTransadoConTratamiento();
+                laInformacionDeRendimiento.ValorFacial = elValorFacial;
+                laInformacionDeRendimiento.ValorTransadoNeto = elValorTransadoNeto;
+                laInformacionDeRendimiento.TasaDeImpuesto = laTasaDeImpuesto;
+                laNuevaInversion.TasaNeta = laInformacionDeRendimiento.TasaNeta;
+                laNuevaInversion.TasaBruta = new TasaBruta(laInformacionDeRendimiento).ComoNumero();
+                laNuevaInversion.ValorTransadoBruto = laInformacionDeRendimiento.ValorTransadoBruto;
+                laNuevaInversion.ImpuestoPagado = laInformacionDeRendimiento.Impuesto;
+                laNuevaInversion.RendimientoPorDescuento = new RendimientoPorDescuentoReal(laInformacionDeRendimiento).ComoNumero();
+            }
+            else
+            {
+                InformacionValorTransadoSinTratamiento laInformacionDeRendimiento = new InformacionValorTransadoSinTratamiento();
+                laInformacionDeRendimiento.ValorFacial = elValorFacial;
+                laInformacionDeRendimiento.ValorTransadoNeto = elValorTransadoNeto;
+                laInformacionDeRendimiento.TasaDeImpuesto = laTasaDeImpuesto;
+                laNuevaInversion.TasaNeta = laInformacionDeRendimiento.TasaNeta;
+                laNuevaInversion.TasaBruta = new TasaBruta(laInformacionDeRendimiento).ComoNumero();
+                laNuevaInversion.ValorTransadoBruto = laInformacionDeRendimiento.ValorTransadoBruto;
+                laNuevaInversion.ImpuestoPagado = laInformacionDeRendimiento.Impuesto;
+                laNuevaInversion.RendimientoPorDescuento = new RendimientoPorDescuentoReal(laInformacionDeRendimiento).ComoNumero();
+            }
+
             laNuevaInversion.FechaDeValor = laFechaActual;
             laNuevaInversion.FechaDeVencimiento = laFechaDeVencimiento;
 

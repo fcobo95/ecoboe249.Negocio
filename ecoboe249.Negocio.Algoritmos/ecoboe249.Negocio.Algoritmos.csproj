@@ -108,7 +108,7 @@
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionDelRendimiento.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionValorTransadoSinTratamiento.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\Parameter Objects\InformacionTasaBruta.cs" />
-    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\RendimientoPorDescuento.cs" />
+    <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\RendimientoPorDescuentoReal.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\TasaBruta.cs" />
     <Compile Include="2. Rendimiento por Descuento\6. Con Polimorfismo\ValorTransadoBrutoConTratamientoFiscal.cs" />
     <Compile Include="3. Impuestos\1. Como un Procedimiento\CalculosParaElImpuesto.cs" />
@@ -136,8 +136,6 @@
     <Compile Include="3. Impuestos\5. Con Tell Don%27t Ask\ValorTransadoBruto.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\Impuesto.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\ImpuestoConTratamientoFiscal.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionImpuestoSinTratamientoFiscal.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\Parameter Objects\InformacionImpuestoConTratamientoFiscal.cs" />
     <Compile Include="4. Validacion\1. Como un Procedimiento\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\2. Con Funciones\ValidacionesParaElImpuesto.cs" />
     <Compile Include="4. Validacion\3. Con Objetos\Validaciones.cs" />
@@ -150,7 +148,7 @@
     <Compile Include="4. Validacion\6. Con Polimorfismo\Parameter Objects\InformacionValidaciones.cs" />
     <Compile Include="4. Validacion\6. Con Polimorfismo\Validaciones.cs" />
     <Compile Include="5. Inversiones\1. Como un Procedimiento\GeneradorDeInversiones.cs" />
-    <Compile Include="5. Inversiones\1. Como un Procedimiento\NuevaInversion.cs" />
+    <Compile Include="5. Inversiones\1. Como un Procedimiento\Estructura\NuevaInversion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

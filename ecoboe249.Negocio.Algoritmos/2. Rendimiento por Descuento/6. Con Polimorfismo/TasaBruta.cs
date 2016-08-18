@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
+namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuentos
 {
     public class TasaBruta
     {
@@ -20,7 +20,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
 
         private static double CalculeLaTasaNeta(InformacionTasaBruta laTasa)
         {
-            return laTasa.TasaNeta();
+            return laTasa.TasaNeta;
         }
 
         public double ComoNumero()

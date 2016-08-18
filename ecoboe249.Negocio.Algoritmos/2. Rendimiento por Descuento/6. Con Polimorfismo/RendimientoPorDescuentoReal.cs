@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento
+namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuentos
 {
-    public class RendimientoPorDescuento
+    public class RendimientoPorDescuentoReal
     {
         private double elValorFacial;
         private double elValorTransadoBruto;
 
-        public RendimientoPorDescuento(InformacionTasaBruta elRendimiento)
+        public RendimientoPorDescuentoReal(InformacionTasaBruta elRendimiento)
         {
             elValorFacial = ObtengaElValorFacial(elRendimiento);
             elValorTransadoBruto = CalculeElValorTransadoBruto(elRendimiento);

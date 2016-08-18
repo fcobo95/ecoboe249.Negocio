@@ -129,11 +129,8 @@
     <Compile Include="3. Impuestos\5. Con Tell Dont Ask\TasaBruta\TasaBruta_Tests.cs" />
     <Compile Include="3. Impuestos\5. Con Tell Dont Ask\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\CalculosParaElImpuesto\CalculosParaElImpuesto_Tests.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\DiasAlVencimiento\DiasAlVencimiento_Tests.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\ImpuestoConTratamientoFiscal\ImpuestoConTratamientoFiscal_Tests.cs" />
     <Compile Include="3. Impuestos\6. Con Polimorfismo\Impuesto\Impuesto_Tests.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\TasaBruta\TasaBruta_Tests.cs" />
-    <Compile Include="3. Impuestos\6. Con Polimorfismo\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
     <Compile Include="4. Validacion\1. Como un Procedimiento\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
     <Compile Include="4. Validacion\2. Con Funciones\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
     <Compile Include="4. Validacion\3. Con Objetos\Validaciones\Validaciones_Tests.cs" />
@@ -144,6 +141,14 @@
     <Compile Include="4. Validacion\5. Con Tell Dont Ask\Validaciones\Validaciones_Tests.cs" />
     <Compile Include="4. Validacion\6. Con Polimorfismo\ValidacionesParaElImpuesto\ValidacionesParaElImpuesto_Tests.cs" />
     <Compile Include="4. Validacion\6. Con Polimorfismo\Validaciones\Validaciones_Tests.cs" />
+    <Compile Include="5. Invesiones\1. Como un Procedimiento\CodigoDeReferencia\CodigoDeReferencia_Tests.cs" />
+    <Compile Include="5. Invesiones\1. Como un Procedimiento\FechaDeValor\FechaDeValor_Tests.cs" />
+    <Compile Include="5. Invesiones\1. Como un Procedimiento\FechaDeVencimiento\FechaDeVencimiento_Tests.cs" />
+    <Compile Include="5. Invesiones\1. Como un Procedimiento\ImpuestoPagado\ImpuestoPagado_Tests.cs" />
+    <Compile Include="5. Invesiones\1. Como un Procedimiento\RendimientoPorDescuento\RendimientoPorDescuento_Tests.cs" />
+    <Compile Include="5. Invesiones\1. Como un Procedimiento\TasaBruta\TasaBruta_Tests.cs" />
+    <Compile Include="5. Invesiones\1. Como un Procedimiento\TasaNeta\TasaNeta_Tests.cs" />
+    <Compile Include="5. Invesiones\1. Como un Procedimiento\ValorTransadoBruto\ValorTransadoBruto_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -152,7 +157,13 @@
       <Name>ecoboe249.Negocio.Algoritmos</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="5. Invesiones\2. Con Funciones\" />
+    <Folder Include="5. Invesiones\3. Con Objetos\" />
+    <Folder Include="5. Invesiones\4. Con ParameterObject\" />
+    <Folder Include="5. Invesiones\5. Con Tell Don%27t Ask\" />
+    <Folder Include="5. Invesiones\6. Con Polimorfismo\" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

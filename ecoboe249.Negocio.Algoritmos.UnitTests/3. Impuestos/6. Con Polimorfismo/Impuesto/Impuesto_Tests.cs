@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuesto;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.Impuestos;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuentos;
 
 namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.Impuesto_Tests
 {
@@ -9,14 +10,14 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.Impuesto_Tests
     {
         private double elResultadoEsperado;
         private double elResutaldoObtenido;
-        private InformacionImpuestoConTratamientoFiscal infoImpuesto;
+        private InformacionValorTransadoConTratamiento infoImpuesto;
 
         [TestMethod]
         public void Impuesto_TasaBrutaBienFormateada_RetornaLaTasaRedondeada()
         {
             elResultadoEsperado = 1621.6216;
 
-            infoImpuesto = new InformacionImpuestoConTratamientoFiscal();
+            infoImpuesto = new InformacionValorTransadoConTratamiento();
             infoImpuesto.ValorFacial = 320000;
             infoImpuesto.ValorTransadoNeto = 300000;
             infoImpuesto.TasaDeImpuesto = 0.08;

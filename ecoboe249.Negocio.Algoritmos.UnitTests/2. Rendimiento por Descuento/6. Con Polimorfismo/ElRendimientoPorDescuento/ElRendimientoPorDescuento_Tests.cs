@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuento;
+using ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuentos;
 
 namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorDescuento_Tests
 {
@@ -24,7 +24,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
             elRendimientoCon.FechaDeVencimiento = new DateTime(2016, 10, 10);
             elRendimientoCon.FechaActual = new DateTime(2016, 3, 3);
             elRendimientoCon.TieneTratamientoFiscal = true;
-            elResultadoObtenido = new RendimientoPorDescuento(elRendimientoCon).ComoNumero();
+            elResultadoObtenido = new RendimientoPorDescuentoReal(elRendimientoCon).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);
         }
@@ -41,7 +41,7 @@ namespace ecoboe249.Negocio.Algoritmos.UnitTests.ConPolimorfismo.RendimientoPorD
             elRendimiento.FechaDeVencimiento = new DateTime(2016, 10, 10);
             elRendimiento.FechaActual = new DateTime(2016, 3, 3);
             elRendimiento.TieneTratamientoFiscal = false;
-            elResultadoObtenido = new RendimientoPorDescuento(elRendimiento).ComoNumero();
+            elResultadoObtenido = new RendimientoPorDescuentoReal(elRendimiento).ComoNumero();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido, 0.0001);
         }
