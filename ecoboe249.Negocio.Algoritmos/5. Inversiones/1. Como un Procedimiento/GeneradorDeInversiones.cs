@@ -8,8 +8,8 @@ namespace ecoboe249.Negocio.Algoritmos.ComoUnProcedimiento.GeneracionDeInversion
 {
     public static class GeneradorDeInversiones
     {
-        public static NuevaInversion GenereUnaNuevaInversion(double elValorFacial,
-            double elValorTransadoNeto, double laTasaDeImpuesto,
+        public static NuevaInversion GenereUnaNuevaInversion(
+            double elValorFacial, double elValorTransadoNeto, double laTasaDeImpuesto,
             DateTime laFechaActual, DateTime laFechaDeVencimiento, bool TieneTratamientoFiscal,
             string elConsecutivoParaElCodigoDeReferencia)
         {

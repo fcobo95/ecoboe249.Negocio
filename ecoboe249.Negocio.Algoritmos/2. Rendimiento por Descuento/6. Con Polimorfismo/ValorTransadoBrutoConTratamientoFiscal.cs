@@ -7,6 +7,7 @@ namespace ecoboe249.Negocio.Algoritmos.ConPolimorfismo.RendimientoPorDescuentos
         private double losDiasAlVencimientoComoNumero;
         private double laTasaBruta;
         private double elValorFacial;
+        private double losDiasDelAño;
 
         public ValorTransadoBrutoConTratamientoFiscal(InformacionTasaBruta elRendimiento)
         {
